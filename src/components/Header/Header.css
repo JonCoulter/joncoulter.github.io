@@ -22,12 +22,16 @@
 
 .header .header-home {
     background-color: var(--main-color);
-    padding: 22px;
+    padding: 18px;
     display: flex;
     justify-content: center;
     align-items: center;
     border-top-left-radius: 6px;
     border-bottom-left-radius: 6px;
+}
+
+.header .header-home > .MuiSvgIcon-root {
+    font-size: 28px;
 }
 
 .header .header-left {

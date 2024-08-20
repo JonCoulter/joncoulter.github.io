@@ -20,10 +20,12 @@ export default function App() {
         <Grid item xs>
           <Router>
             <Header />
-            <Routes>
-              <Route path="/" element={<Resume />} />
-              <Route path="/portfolio" element={<Portfolio />} />
-            </Routes>
+            <div className='main-content container-shadow'>
+              <Routes>
+                <Route path="/" element={<Resume />} />
+                <Route path="/portfolio" element={<Portfolio />} />
+              </Routes>
+            </div>
           </Router>
           <Footer />
         </Grid>

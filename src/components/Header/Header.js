@@ -1,7 +1,7 @@
 import React from "react";
 import { Nav, Navbar } from "react-bootstrap";
-import { Link, NavLink, useLocation } from "react-router-dom";
-import { HomeRounded, SchoolRounded, WorkRounded, Fackebook, Twitter, LinkedIn, Github, Telegram } from "@mui/icons-material"
+import { NavLink, useLocation } from "react-router-dom";
+import { HomeOutlined, Telegram } from "@mui/icons-material"
 import CustomButton from '../CustomButton/CustomButton'
 
 import db from '../../utils/db'
@@ -17,7 +17,7 @@ export default function Header(props) {
             {/* Home Link */}
             <Nav.Link as={NavLink} to='/'>
                 <Navbar.Brand className='header-home'>
-                    <HomeRounded />
+                    <HomeOutlined />
                 </Navbar.Brand>
             </Nav.Link>
 

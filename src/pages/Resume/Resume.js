@@ -1,9 +1,95 @@
 import React from "react";
+import { Grid, Typography } from "@mui/material";
+import CustomTimeline, { CustomTimelineSeparator } from '../../components/CustomTimeline/CustomTimeline'
+import CodeIcon from '@mui/icons-material/Code';
+import SchoolOutlinedIcon from '@mui/icons-material/SchoolOutlined';
+
+import './Resume.css'
+
+import db from '../../utils/db'
+import { TimelineConnector, TimelineContent, TimelineDot, TimelineItem, TimelineSeparator } from "@mui/lab";
 
 export default function Resume() {
     return(
-        <div>
-            Resume page
-        </div>
+        <>
+            {/* About me */}
+            <Grid container className='section pb-45'>
+                <Grid item className='section-title mb-30'>
+                    <span></span>
+                    <h6 className="section-title-text">
+                        About Me
+                    </h6>
+                </Grid>
+                <Grid item xs={12}>
+                    <Typography variant='body2' className="section-about-me-text">
+                        {db.about}
+                    </Typography>
+                </Grid>
+            </Grid>
+
+            {/* Experience and Education */}
+            <Grid container className='section'>
+                <Grid item className="section-title mb-30">
+                    <span></span>
+                    <h6 className='section-title-text'>
+                        Resume
+                    </h6>
+                </Grid>
+
+                <Grid item xs={12}>
+                    <Grid container className='resume-timeline'>
+                        {/* Experience */}
+                        <Grid item sm={12} md={6}>
+                            <CustomTimeline title='Experience' icon={<CodeIcon />}>
+                                {db.experiences.map((experience) => (
+                                    <TimelineItem>
+                                        <TimelineSeparator className='timeline-separator'>
+                                            <TimelineDot 
+                                                variant='outlined'
+                                                className='timeline-dot'
+                                            />
+                                            <TimelineConnector />
+                                        </TimelineSeparator>
+                                        <TimelineContent className='resume-content'>
+                                            <Typography className='timeline-title'>{experience.title}</Typography>
+                                            <Typography variant='caption' className='timeline-date'>{experience.date}</Typography>
+                                            <Typography variant='body2' className='timeline-description'>{experience.description}</Typography>
+                                        </TimelineContent>
+                                    </TimelineItem>
+                                ))}
+                            </CustomTimeline>
+                        </Grid>
+
+                        {/* Education */}
+                        <Grid item sm={12} md={6}>
+                            <CustomTimeline title='Education' icon={<SchoolOutlinedIcon />}>
+                                {db.education.map((education) => (
+                                    <TimelineItem>
+                                        <TimelineSeparator className='timeline-separator'>
+                                            <TimelineDot 
+                                                variant='outlined'
+                                                className='timeline-dot'
+                                            />
+                                            <TimelineConnector />
+                                        </TimelineSeparator>
+                                        <TimelineContent className='resume-content'>
+                                            <Typography className='timeline-title'>{education.title}</Typography>
+                                            <Typography variant='caption' className='timeline-date'>{education.date}</Typography>
+                                            <Typography variant='body2' className='timeline-description'>{education.description}</Typography>
+                                        </TimelineContent>
+                                    </TimelineItem>
+                                ))}
+                            </CustomTimeline>
+                        </Grid>
+                    </Grid>
+                </Grid>
+
+            </Grid>
+
+            {/* idk */}
+            <Grid container className='section'>
+
+            </Grid>
+        </>
     )
 }

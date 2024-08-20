@@ -60,7 +60,7 @@ export default function Profile() {
                 </CustomTimeline>
 
                 <div className='btn-container'>
-                    <CustomButton icon={<GetAppIcon />} text='Download CV' />
+                    <CustomButton icon={<GetAppIcon />} text='Download Resume' />
                 </div>
             </div>
         </div>
