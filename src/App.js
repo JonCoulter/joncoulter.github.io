@@ -1,31 +1,33 @@
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
-import { createTheme, ThemeProvider } from '@mui/material/styles';
-import { blue, lightBlue } from '@mui/material/colors';
-import Layout from './components/Layout';
-import { Home, Resume, Projects, Teaching, Contact } from './pages';
-import './styles/index.css'
+import { Container, Grid } from '@mui/material';
 
-const theme = createTheme({
-  palette: {
-    primary: blue,
-    secondary: lightBlue
-  },
-});
+import Profile from './components/Profile/Profile';
+import Header from './components/Header/Header';
+import Footer from './components/Footer/Footer';
+import Resume from './pages/Resume/Resume';
+import Portfolio from './pages/Portfolio/Portfolio';
+
+import './App.css'
+import './index.css'
 
 export default function App() {
   return (
-    <ThemeProvider theme={theme}>
-      <Router>
-        <Layout>
-          <Routes>
-            <Route path="/" element={<Home />} />
-            <Route path="/resume" element={<Resume />} />
-            <Route path="/projects" element={<Projects />} />
-            <Route path="/teaching" element={<Teaching />} />
-            <Route path="/contact" element={<Contact />} />
-          </Routes>
-        </Layout>
-      </Router>
-    </ThemeProvider>
+    <Container className='top-60'>
+      <Grid container spacing={7}>
+        <Grid item xs={12} sm={12} md={4} lg={3}>
+          <Profile />
+        </Grid>
+        <Grid item xs>
+          <Router>
+            <Header />
+            <Routes>
+              <Route path="/" element={<Resume />} />
+              <Route path="/portfolio" element={<Portfolio />} />
+            </Routes>
+          </Router>
+          <Footer />
+        </Grid>
+      </Grid>
+    </Container>
   );
 }

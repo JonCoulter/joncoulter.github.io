@@ -1,0 +1,20 @@
+:root {
+    --main-color: #829dff;
+}
+
+/* Margins and Paddings */
+.top-60 {
+    margin-top: 60px;
+}
+
+@media (max-width: 991px) {
+    .top-60 {
+        margin-top: 30px;
+    }
+}
+
+.container-shadow {
+    box-shadow: 0px 2px 92px 0px rgba(0, 0, 0, 0.14);
+    -webkit-box-shadow: 0px 2px 92px 0px rgba(0, 0, 0, 0.14);
+    -moz-box-shadow: 0px 2px 92px 0px rgba(0, 0, 0, 0.14);
+}
