@@ -1,13 +1,15 @@
 import React from 'react'
 import Drawer from '@mui/material/Drawer'
 import Typography from '@mui/material/Typography'
-import { Avatar, Box, Container, List, ListItemButton, ListItemIcon, ListItemText } from '@mui/material';
+import { Avatar, Container, List, ListItemButton, ListItemIcon, ListItemText } from '@mui/material';
 import PersonOutlineOutlinedIcon from '@mui/icons-material/PersonOutlineOutlined';
 import InsertDriveFileOutlinedIcon from '@mui/icons-material/InsertDriveFileOutlined';
 import CodeOutlinedIcon from '@mui/icons-material/CodeOutlined';
 import ConnectWithoutContactOutlinedIcon from '@mui/icons-material/ConnectWithoutContactOutlined';
 import SchoolOutlinedIcon from '@mui/icons-material/SchoolOutlined';
 import { useLocation, useNavigate } from 'react-router-dom';
+import '../styles/index.css'
+
 
 const drawerWidth = 230
 
@@ -45,8 +47,13 @@ export default function Layout({ children }) {
 
   return (
     <Container
+      maxWidth={false}
+      style={{
+        paddingLeft: 0,
+        paddingRight: 0
+      }}
       sx={{
-        display: 'flex'
+        display: 'flex',
       }}
     >
       {/* Left Drawer */}
@@ -73,7 +80,8 @@ export default function Layout({ children }) {
             marginTop: 3,
             marginBottom: 2,
             textAlign: 'center',
-            width: '100%'
+            width: '100%',
+            fontWeight: 'bold'
           }}
         >
           Jonathan Coulter
@@ -94,10 +102,10 @@ export default function Layout({ children }) {
             <ListItemButton
               key={item.text}
               onClick={() => navigate(item.path)}
-              className={location.pathname === item.path ? "drawer-button-active" : null}
+              style={location.pathname === item.path ? { backgroundColor: '#f9f9f9' } : {}}
               sx={{
                 width: drawerWidth,
-                marginLeft: 3
+                paddingLeft: 2.5
               }}
             >
               <ListItemIcon>{item.icon}</ListItemIcon>
@@ -112,7 +120,9 @@ export default function Layout({ children }) {
       <div
         style={{
           background: "#f9f9f9",
-          width: "100%"
+          width: "100%",
+          padding: 20,
+          maxWidth: null
         }}
       >
         {children}
