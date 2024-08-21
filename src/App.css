@@ -20,7 +20,7 @@
 }
 
 .pb-45 {
-    padding-bottom: 45px;
+    padding-bottom: 45px !important;
 }
 
 @media (max-width: 991px) {

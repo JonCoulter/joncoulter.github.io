@@ -22,3 +22,62 @@
     font-size: small;
     margin-top: 6px;
 }
+
+
+/* Services */
+.service {
+    height: 100%;
+    text-align: center;
+}
+
+.service .service-icon > .MuiSvgIcon-root {
+    font-size: 46px;
+    margin-left: 0;
+    font-weight: 300;
+    color: darkslategray;
+}
+
+.service .service-title {
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 35px;
+    text-align: center;
+}
+
+.service .service-description {
+    color: #989898;
+    border-color: var(--main-color);
+    margin-right: 5px;
+    text-align: center;
+}
+
+
+/* Skills */
+.skill {
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0px 0px 48px 0px rgba(4, 6, 4, 0.08) !important;
+    min-height: 186px;
+    height: 100%;
+}
+
+.skill .skill-title {
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 35px;
+}
+
+.skill .skill-description {
+    display: flex;
+    align-items: center;
+    color: #989898;
+    font-weight: 400;
+    line-height: 18px;
+}
+
+.skill .skill-description .timeline-dot {
+    color: black;
+    border-color: var(--main-color);
+    padding: 2px;
+    margin-right: 5px;
+}

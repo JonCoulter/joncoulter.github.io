@@ -1,6 +1,7 @@
 import LinkedInIcon from '@mui/icons-material/LinkedIn';
 import GitHubIcon from '@mui/icons-material/GitHub';
 import InstagramIcon from '@mui/icons-material/Instagram';
+import WebOutlinedIcon from '@mui/icons-material/WebOutlined';
 
 export default{
     name: "Jonathan Coulter",
@@ -52,6 +53,59 @@ export default{
             title: "GHS",
             date: "Aug 2018 - May 2022",
             description: "I worked at Pitt and it was awesome and I developed alot of software and it was so cool because I learned so much and got to work with really cool people!"
+        }
+    ],
+
+
+    services: [
+        {
+            title: "Web Development",
+            description: "I have been working on my web development skills over the last few months and have become proficient in several technologies.",
+            icon: <WebOutlinedIcon />
+        },
+        {
+            title: "Backend",
+            description: "I have been working on my backend skills over the last few months and have become proficient in several technologies.",
+            icon: <WebOutlinedIcon />
+        },
+        {
+            title: "Data Structures",
+            description: "I have been working on my DSA skills over the last few months and have become proficient in several technologies.",
+            icon: <WebOutlinedIcon />
+        }
+    ],
+
+    skills: [
+        {
+            title: "Front-End",
+            description: [
+                "ReactJS",
+                "JavaScript",
+                "Bootstrap",
+                "Material UI"
+            ]
+        },
+        {
+            title: "Back-End",
+            description: [
+                "Python",
+                "Node.js",
+                "Java"
+            ]
+        },
+        {
+            title: "Databases",
+            description: [
+                "Firebase",
+                "SQLite"
+            ]
+        },
+        {
+            title: "Source Control",
+            description: [
+                "Git",
+                "Github"
+            ]
         }
     ]
 
