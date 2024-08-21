@@ -50,8 +50,6 @@ export default function Profile() {
 
             <div className='profile-information'>
                 <CustomTimeline icon={<PersonOutlineOutlined />}>
-                    <CustomTimelineItem title="Name" text={db.name}/>
-                    <CustomTimelineItem title="Title" text={db.title}/>
                     <CustomTimelineItem title="Email" text={db.email}/>
 
                     {Object.keys(db.socials).map(key => (

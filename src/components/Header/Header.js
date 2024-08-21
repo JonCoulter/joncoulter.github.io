@@ -48,7 +48,7 @@ export default function Header(props) {
                             {db.socials[key].icon}
                         </a>
                     ))}
-                    <CustomButton text='Contact Me' icon={<Telegram />}/>
+                    <CustomButton text='Contact Me' icon={<Telegram />} email={db.email}/>
                 </div>
 
             </Navbar.Collapse>

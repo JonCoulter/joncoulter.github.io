@@ -107,6 +107,13 @@ export default{
                 "Github"
             ]
         }
+    ],
+
+    portfolio: [
+        {
+            tag: "React",
+            image: ""
+        }
     ]
 
 
