@@ -25,11 +25,19 @@ export default function Header(props) {
 
             <Navbar.Collapse>
                 <Nav className='header-left'>
-                    {/* Resume Link */}
+                    {/* Home Link */}
                     <Nav.Link 
                         as={NavLink}
                         to='/'
                         className={location === '/' ? 'header-link-active' : 'header-link'}>
+                            Home
+                    </Nav.Link>
+
+                    {/* Resume Link */}
+                    <Nav.Link 
+                        as={NavLink}
+                        to='/resume'
+                        className={location === '/resume' ? 'header-link-active' : 'header-link'}>
                             Resume
                     </Nav.Link>
 
@@ -48,7 +56,15 @@ export default function Header(props) {
                             {db.socials[key].icon}
                         </a>
                     ))}
-                    <CustomButton text='Contact Me' icon={<Telegram />} email={db.email}/>
+                    <CustomButton
+                        icon={<Telegram />}
+                        text="Contact Me"
+                        href={`https://mail.google.com/mail/u/0/?view=cm&fs=1&tf=1&source=mailto&to=support@example.com`}
+                        target="_blank"
+                        rel="nofollow noopener"
+                        title="Send Email"
+                    />
+
                 </div>
 
             </Navbar.Collapse>

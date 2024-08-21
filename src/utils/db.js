@@ -28,30 +28,45 @@ export default{
         }
     },
 
-    about: "Hi, I'm Jonathan Coulter! I am a Computer Science student at the University of Pittsburgh.\n\nI am passionate about Software Engineering and leveraging technology for positive impact. I am actively exploring opportunities to contribute to meaningful projects.",
+    about: "Hi, I’m Jonathan Coulter!\n\nI am currently studying Computer Science at the University of Pittsburgh where I'm also minoring in Mathematics and Economics. I’m eagerly looking forward to graduating in December 2025. My college years have been a blend of learning, experimenting, and contributing to projects that leverage technology for a positive impact. From creating platforms that encourage constructive dialogue to developing apps that promote health, I’m all about using my skills to make a difference.\n\nOutside of my studies, I've enjoyed working as a Software Engineer and Developer Intern at Carnegie Mellon University, where I've been part of teams that build research tools to tackle social issues. I'm also a Teaching Assistant and Tutor at Pitt, helping other students navigate the complexities of computer science, from data structures to algorithms. My experiences have taught me a lot about teamwork, innovation, and the power of technology to solve real-world problems. I love diving into new challenges and am always ready to learn and grow in this ever-evolving field.",
 
     experiences: [
         {
-            title: "CMU",
-            date: "May 2024 - Aug 2024",
+            title: "Software Engineer | Carnegie Mellon University",
+            date: "Aug '24 - Present",
             description: "I worked at CMU and it was awesome and I developed alot of software and it was so cool because I learned so much and got to work with really cool people!"
         },
         {
-            title: "Pitt",
-            date: "May 2024 - Aug 2024",
+            title: "Developer Intern | Carnegie Mellon University",
+            date: "May '24 - Aug '24",
+            description: "I worked at CMU and it was awesome and I developed alot of software and it was so cool because I learned so much and got to work with really cool people!"
+        },
+        {
+            title: "Undergraduate Teaching Assistant",
+            date: "Jan '24 - Present",
+            description: "I worked at Pitt and it was awesome and I developed alot of software and it was so cool because I learned so much and got to work with really cool people!"
+        },
+        {
+            title: "SCI Peer Tutor",
+            date: "Jan '24 - Present",
+            description: "I worked at Pitt and it was awesome and I developed alot of software and it was so cool because I learned so much and got to work with really cool people!"
+        },
+        {
+            title: "Research Fellow | Center for Analytical Approaches to Social Innovation",
+            date: "Aug '23 - Apr '24",
             description: "I worked at Pitt and it was awesome and I developed alot of software and it was so cool because I learned so much and got to work with really cool people!"
         }
     ],
 
     education: [
         {
-            title: "Pitt",
-            date: "Aug 2022 - Dec 2025",
+            title: "University of Pittsburgh | School of Computing and Information",
+            date: "Aug '22 - Dec '25",
             description: "I worked at CMU and it was awesome and I developed alot of software and it was so cool because I learned so much and got to work with really cool people!"
         },
         {
-            title: "GHS",
-            date: "Aug 2018 - May 2022",
+            title: "Gateway High School",
+            date: "Aug '18 - May '22",
             description: "I worked at Pitt and it was awesome and I developed alot of software and it was so cool because I learned so much and got to work with really cool people!"
         }
     ],

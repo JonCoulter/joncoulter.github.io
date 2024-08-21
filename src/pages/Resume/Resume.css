@@ -1,12 +1,3 @@
-/* About me */
-.section-about-me-text {
-    color: darkslategray;
-    font: smaller;
-    line-height: 22px;
-    white-space: pre-line;
-}
-
-
 /* Timeline section */
 .resume-timeline .resume-content .timeline-title {
     font-size: 16px;

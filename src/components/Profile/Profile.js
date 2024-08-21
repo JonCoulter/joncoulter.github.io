@@ -58,7 +58,15 @@ export default function Profile() {
                 </CustomTimeline>
 
                 <div className='btn-container'>
-                    <CustomButton icon={<GetAppIcon />} text='Download Resume' />
+                <CustomButton
+                    icon={<GetAppIcon />}  // Assuming you import this icon
+                    text="View Resume"
+                    href="/JonathanCoulterResume.pdf"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    title="View Resume"
+                />
+
                 </div>
             </div>
         </div>
