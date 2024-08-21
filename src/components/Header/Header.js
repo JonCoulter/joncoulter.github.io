@@ -4,10 +4,11 @@ import { NavLink, useLocation } from "react-router-dom";
 import { HomeOutlined, Telegram } from "@mui/icons-material"
 import CustomButton from '../CustomButton/CustomButton'
 
-import db from '../../utils/db'
-
 import 'bootstrap/dist/css/bootstrap.min.css';
 import './Header.css'
+
+import db from '../../utils/db'
+
 
 export default function Header(props) {
     const location = useLocation().pathname
@@ -59,7 +60,7 @@ export default function Header(props) {
                     <CustomButton
                         icon={<Telegram />}
                         text="Contact Me"
-                        href={`https://mail.google.com/mail/u/0/?view=cm&fs=1&tf=1&source=mailto&to=support@example.com`}
+                        href={`https://mail.google.com/mail/u/0/?view=cm&fs=1&tf=1&source=mailto&to=${db.email}}`}
                         target="_blank"
                         rel="nofollow noopener"
                         title="Send Email"

@@ -6,9 +6,10 @@ import { PersonOutlineOutlined } from "@mui/icons-material";
 import CustomButton from '../CustomButton/CustomButton'
 import GetAppIcon from '@mui/icons-material/GetApp';
 
+import './Profile.css'
+
 import db from '../../utils/db'
 
-import './Profile.css'
 
 function CustomTimelineItem({ title, text, link }) {
     return(

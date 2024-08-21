@@ -3,11 +3,11 @@ import { Grid, Icon, Paper, Typography } from "@mui/material";
 import CustomTimeline, { CustomTimelineSeparator } from '../../components/CustomTimeline/CustomTimeline'
 import CodeIcon from '@mui/icons-material/Code';
 import SchoolOutlinedIcon from '@mui/icons-material/SchoolOutlined';
+import { TimelineConnector, TimelineContent, TimelineDot, TimelineItem, TimelineSeparator } from "@mui/lab";
 
 import './Resume.css'
 
 import db from '../../utils/db'
-import { TimelineConnector, TimelineContent, TimelineDot, TimelineItem, TimelineSeparator } from "@mui/lab";
 
 export default function Resume() {
     return(
