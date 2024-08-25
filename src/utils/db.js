@@ -129,22 +129,22 @@ export default{
     projects: [
         {
             title: "Website",
-            link: "url",
+            link: "https://github.com/JonCoulter/personal-website",
             description: "This was the awesome epic website I built using yada yada yada tools in some language wooo!"
         },
         {
             title: "Echo",
-            link: "url",
+            link: "https://github.com/Gwon-Stephen/MoodMusic",
             description: "This was the awesome epic website I built that used computer vision to do xyz and spotify"
         },
         {
             title: "Side Quest",
-            link: "url",
+            link: "/",
             description: "This was an ios app I built to give people something to do bereal clone!"
         },
         {
             title: "Blink Buddy",
-            link: "url",
+            link: "https://github.com/JemLuu/Hackathon-2022",
             description: "This was a goofy app that tracked your blinking"
         }
     ]

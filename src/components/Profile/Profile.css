@@ -3,6 +3,8 @@
     border-radius: 8px;
     width: 100%;
     display: inline-block;
+    position: sticky;
+    top: 2vh;
 }
 
 .profile-name {

@@ -53,9 +53,7 @@
 }
 
 .skill .skill-title {
-    font-size: 14px;
-    font-weight: 500;
-    line-height: 35px;
+    font-size: 14px !important;
 }
 
 .skill .skill-description {
@@ -77,17 +75,18 @@
 /* Projects */
 .projects .project {
     border-radius: 8px;
-    padding: 20px;
-    box-shadow: 0px 0px 36px 0px rgba(4, 6, 4, 0.08) !important;
-    min-height: 186px;
+    padding: 15px;
+    box-shadow: 0px 0px 36px 0px rgba(4, 6, 4, 0.1) !important;
+    min-height: 215px;
     height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
 
 .projects .project-title {
-    font-size: 14px;
-    font-weight: 500;
-    line-height: 35px;
-}
+
+} 
 
 .projects .project-description {
     display: flex;
@@ -95,4 +94,5 @@
     color: #989898;
     font-weight: 400;
     line-height: 18px;
+    margin-bottom: auto;
 }

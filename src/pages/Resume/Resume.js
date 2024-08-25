@@ -4,6 +4,8 @@ import CustomTimeline, { CustomTimelineSeparator } from '../../components/Custom
 import CodeIcon from '@mui/icons-material/Code';
 import SchoolOutlinedIcon from '@mui/icons-material/SchoolOutlined';
 import { TimelineConnector, TimelineContent, TimelineDot, TimelineItem, TimelineSeparator } from "@mui/lab";
+import CustomButton from "../../components/CustomButton/CustomButton";
+import GitHubIcon from '@mui/icons-material/GitHub';
 
 import './Resume.css'
 
@@ -136,12 +138,25 @@ export default function Resume() {
                                 <Typography variant='h6' className='project-title'>
                                     {project.title}
                                 </Typography>
-                                <Typography className='project-link'>
-                                    <a href={project.link}>Source Code</a>
-                                </Typography>
                                 <Typography variant='body2' className='project-description'>
                                     {project.description}
                                 </Typography>
+                                {/* <a 
+                                    href={project.link}
+                                    className="project-link"
+                                    target="_blank"
+                                    rel="nofollow noopener noreferrer"
+                                >
+                                    Source Code
+                                </a> */}
+                                <CustomButton
+                                    icon={<GitHubIcon />}
+                                    text="Source Code"
+                                    href={project.link}
+                                    target="_blank"
+                                    rel="nofollow noopener"
+                                    title="View source code"
+                                />
                             </Paper>
                         </Grid>
                     ))}

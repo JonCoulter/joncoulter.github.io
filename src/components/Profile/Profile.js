@@ -35,7 +35,7 @@ function CustomTimelineItem({ title, text, link }) {
 
 export default function Profile() {
     return(
-        <div className='profile container-shadow'>
+        <div className='profile container-shadow' sticky='top'>
             <div className='profile-name'>
                 <Typography className='name'>
                     {db.name}

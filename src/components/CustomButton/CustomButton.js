@@ -8,11 +8,11 @@ export default function CustomButton({ icon, text, href, target, rel, title }) {
         <Button
             className='custom-btn'
             endIcon={icon ? (<div className='btn-icon-container'>{icon}</div>) : null}
-            component="a"  // Render as an anchor tag
-            href={href}  // URL for email, download link, etc.
-            target={target}  // _blank, _self, etc.
-            rel={rel}  // nofollow, noopener, noreferrer, etc.
-            title={title}  // Tooltip text
+            component="a"
+            href={href}
+            target={target}
+            rel={rel}
+            title={title}
         >
             <span className='btn-text'>
                 {text}
