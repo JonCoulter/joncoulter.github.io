@@ -13,22 +13,24 @@ export default{
     socials: {
         LinkedIn: {
             link: "https://www.linkedin.com/in/jonathan-coulter-/",
-            text: "My LinkedIn",
+            text: "LinkedIn",
             icon: <LinkedInIcon />
         },
         GitHub: {
             link: "https://github.com/JonCoulter",
-            text: "My GitHub",
+            text: "GitHub",
             icon: <GitHubIcon />
         },
         Instagram: {
             link: "https://instagram.com/jon_coulter",
-            text: "My Instagram",
+            text: "Instagram",
             icon: <InstagramIcon />
         }
     },
 
-    about: "Hi, I’m Jonathan Coulter!\n\nI am currently studying Computer Science at the University of Pittsburgh where I'm also minoring in Mathematics and Economics. I’m eagerly looking forward to graduating in December 2025. My college years have been a blend of learning, experimenting, and contributing to projects that leverage technology for a positive impact. From creating platforms that encourage constructive dialogue to developing apps that promote health, I’m all about using my skills to make a difference.\n\nOutside of my studies, I've enjoyed working as a Software Engineer and Developer Intern at Carnegie Mellon University, where I've been part of teams that build research tools to tackle social issues. I'm also a Teaching Assistant and Tutor at Pitt, helping other students navigate the complexities of computer science, from data structures to algorithms. My experiences have taught me a lot about teamwork, innovation, and the power of technology to solve real-world problems. I love diving into new challenges and am always ready to learn and grow in this ever-evolving field.",
+    about: "Hi, I'm Jonathan Coulter!\n\nI am currently studying Computer Science at the University of Pittsburgh where I'm also minoring in Mathematics and Economics. I'm eagerly looking forward to graduating in December 2025. My college years have been a blend of learning, experimenting, and contributing to projects that leverage technology for a positive impact. From creating platforms that encourage constructive dialogue to developing apps that promote health, I'm all about using my skills to make a difference.\n\nOutside of my studies, I've enjoyed working as a Software Engineer and Developer Intern at Carnegie Mellon University, where I've been part of teams that build research tools to tackle social issues. I'm also a Teaching Assistant and Tutor at Pitt, helping other students navigate the complexities of computer science, from data structures to algorithms. My experiences have taught me a lot about teamwork, innovation, and the power of technology to solve real-world problems. I love diving into new challenges and am always ready to learn and grow in this ever-evolving field.",
+
+    hobbies: "I love to climb!",
 
     experiences: [
         {
@@ -124,10 +126,26 @@ export default{
         }
     ],
 
-    portfolio: [
+    projects: [
         {
-            tag: "React",
-            image: ""
+            title: "Website",
+            link: "url",
+            description: "This was the awesome epic website I built using yada yada yada tools in some language wooo!"
+        },
+        {
+            title: "Echo",
+            link: "url",
+            description: "This was the awesome epic website I built that used computer vision to do xyz and spotify"
+        },
+        {
+            title: "Side Quest",
+            link: "url",
+            description: "This was an ios app I built to give people something to do bereal clone!"
+        },
+        {
+            title: "Blink Buddy",
+            link: "url",
+            description: "This was a goofy app that tracked your blinking"
         }
     ]
 

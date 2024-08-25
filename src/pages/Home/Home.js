@@ -23,6 +23,21 @@ export default function Home(){
                     </Typography>
                 </Grid>
             </Grid>
+
+            {/* Hobbies */}
+            <Grid container className='section pb-45'>
+                <Grid item className='section-title mb-30'>
+                    <span></span>
+                    <h6 className="section-title-text">
+                        Get to Know Me
+                    </h6>
+                </Grid>
+                <Grid item xs={12}>
+                    <Typography variant='body2' className="section-hobbies-text">
+                        {db.hobbies}
+                    </Typography>
+                </Grid>
+            </Grid>
         </>
     )
 }

@@ -12,7 +12,7 @@ import db from '../../utils/db'
 export default function Resume() {
     return(
         <>
-            {/* Experience and Education */}
+            {/* Experience & Education */}
             <Grid container className='section pb-45'>
                 <Grid item className="section-title mb-30">
                     <span></span>
@@ -102,7 +102,7 @@ export default function Resume() {
             </Grid>
 
             {/* Skills */}
-            <Grid container className='section' spacing={3} justifyContent='space-between'>
+            <Grid container className='section pb-45' spacing={3} justifyContent='space-between'>
                 {db.skills.map((skill) => (
                     <Grid item xs={12} sm={6} md={3}>
                         <Paper elevation={0} className='skill'>
@@ -118,6 +118,35 @@ export default function Resume() {
                         </Paper>
                     </Grid>
                 ))}
+            </Grid>
+
+            {/* Projects */}
+            <Grid container className='section pb-45'>
+                <Grid item className="section-title mb-30">
+                    <span></span>
+                    <h6 className='section-title-text'>
+                        Projects
+                    </h6>
+                </Grid>
+
+                <Grid container className='projects' spacing={3} justifyContent='space-between'>
+                    {db.projects.map((project) => (
+                        <Grid item xs={12} sm={6} md={4} lg={3}>
+                            <Paper elevation={1} className='project'>
+                                <Typography variant='h6' className='project-title'>
+                                    {project.title}
+                                </Typography>
+                                <Typography className='project-link'>
+                                    <a href={project.link}>Source Code</a>
+                                </Typography>
+                                <Typography variant='body2' className='project-description'>
+                                    {project.description}
+                                </Typography>
+                            </Paper>
+                        </Grid>
+                    ))}
+                </Grid>
+
             </Grid>
         </>
     )
