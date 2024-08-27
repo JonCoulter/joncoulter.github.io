@@ -15,7 +15,7 @@ export default{
     socials: {
         LinkedIn: {
             link: "https://www.linkedin.com/in/jonathan-coulter-/",
-            text: "jonathan-coulter",
+            text: "jonathan-coulter-",
             icon: <LinkedInIcon />
         },
         GitHub: {
