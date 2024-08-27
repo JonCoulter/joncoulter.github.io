@@ -196,25 +196,32 @@ export default{
     ],
 
 
-    teaching: [
-        {
-            semester: "Fall '24",
-            courses: "CS 0445 - Data Structures & Algorithms",
-            role: "Undergraduate Teaching Assistant"
-        },
-        {
-            semester: "Fall '24",
-            courses: "CS 0007 - Intoduction to Computer Programming\nCMPINF 0401 - Intermediate Programming\nCS 0441 - Discrete Structures for CS\nCS 0445 - Data Structures & Algorithms\nCS 0447 - Computer Organization & Assembly Language\nCS 0449 - Introduction to Systems Software",
-            role: "SCI Peer Tutor"
-        },{
-            semester: "Spring '24",
-            courses: "CS 0445 - Data Structures & Algorithms",
-            role: "Undergraduate Teaching Assistant"
-        },{
-            semester: "Spring '24",
-            courses: "CMPINF 0401 - Intermediate Programming\nCS 0445 - Data Structures & Algorithms",
-            role: "SCI Peer Tutor"
-        },
-    ]
-
+    teaching: {
+        current:
+        [
+            {
+                semester: "Fall '24",
+                courses: "CS 0445 - Data Structures & Algorithms",
+                role: "Undergraduate Teaching Assistant"
+            },
+            {
+                semester: "Fall '24",
+                courses: "CS 0007 - Intoduction to Computer Programming\nCMPINF 0401 - Intermediate Programming\nCS 0441 - Discrete Structures for CS\nCS 0445 - Data Structures & Algorithms\nCS 0447 - Computer Organization & Assembly Language\nCS 0449 - Introduction to Systems Software",
+                role: "SCI Peer Tutor"
+            }
+        ],
+        previous:
+        [
+            {
+                semester: "Spring '24",
+                courses: "CS 0445 - Data Structures & Algorithms",
+                role: "Undergraduate Teaching Assistant"
+            },
+            {
+                semester: "Spring '24",
+                courses: "CMPINF 0401 - Intermediate Programming\nCS 0445 - Data Structures & Algorithms",
+                role: "SCI Peer Tutor"
+            },
+        ]
+    }
 }
