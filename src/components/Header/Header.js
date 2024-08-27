@@ -42,12 +42,12 @@ export default function Header(props) {
                             Resume
                     </Nav.Link>
 
-                    {/* Portfolio Link */}
+                    {/* Teaching Link */}
                     <Nav.Link 
                         as={NavLink}
-                        to='/portfolio'
-                        className={location === '/portfolio' ? 'header-link-active' : 'header-link'}>
-                            Portfolio
+                        to='/teaching'
+                        className={location === '/teaching' ? 'header-link-active' : 'header-link'}>
+                            Teaching
                     </Nav.Link>
                 </Nav>
 

@@ -1,0 +1,16 @@
+/* Timeline section */
+.teaching-timeline .teaching-content .teach-semester {
+    font-size: 16px;
+    font-weight: 500;
+}
+
+.teaching-timeline .teaching-content .teach-courses {
+    color: darkslategray;
+    white-space: pre-wrap;
+}
+
+.teaching-timeline .teaching-content .teach-role {
+    color: gray;
+    font-size: small;
+    margin-top: 6px;
+}

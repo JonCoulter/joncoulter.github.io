@@ -26,7 +26,7 @@ export default function Resume() {
                 <Grid item xs={12}>
                     <Grid container className='resume-timeline'>
                         {/* Experience */}
-                        <Grid item sm={12} md={6}>
+                        <Grid item sm={12} md={7}>
                             <CustomTimeline title='Experience' icon={<CodeIcon />}>
                                 {db.experiences.map((experience) => (
                                     <TimelineItem>
@@ -39,6 +39,7 @@ export default function Resume() {
                                         </TimelineSeparator>
                                         <TimelineContent className='resume-content'>
                                             <Typography className='timeline-title'>{experience.title}</Typography>
+                                            <Typography className='timeline-location'>{experience.location}</Typography>
                                             <Typography variant='caption' className='timeline-date'>{experience.date}</Typography>
                                             <Typography variant='body2' className='timeline-description'>{experience.description}</Typography>
                                         </TimelineContent>
@@ -48,7 +49,7 @@ export default function Resume() {
                         </Grid>
 
                         {/* Education */}
-                        <Grid item sm={12} md={6}>
+                        <Grid item sm={12} md={5}>
                             <CustomTimeline title='Education' icon={<SchoolOutlinedIcon />}>
                                 {db.education.map((education) => (
                                     <TimelineItem>
@@ -61,6 +62,7 @@ export default function Resume() {
                                         </TimelineSeparator>
                                         <TimelineContent className='resume-content'>
                                             <Typography className='timeline-title'>{education.title}</Typography>
+                                            <Typography className='timeline-location'>{education.location}</Typography>
                                             <Typography variant='caption' className='timeline-date'>{education.date}</Typography>
                                             <Typography variant='body2' className='timeline-description'>{education.description}</Typography>
                                         </TimelineContent>
@@ -85,7 +87,7 @@ export default function Resume() {
                 <Grid item xs={12}>
                     <Grid container spacing={3} justifyContent='space-around'>
                         {db.services.map((service) => (
-                            <Grid item xs={12} sm={6} md={3}>
+                            <Grid item xs={12} sm={6} md={4}>
                                 <div className='service'>
                                     <div className='service-icon'>
                                         {service.icon}
@@ -106,7 +108,7 @@ export default function Resume() {
             {/* Skills */}
             <Grid container className='section pb-45' spacing={3} justifyContent='space-between'>
                 {db.skills.map((skill) => (
-                    <Grid item xs={12} sm={6} md={3}>
+                    <Grid item xs={12} sm={6} lg={3}>
                         <Paper elevation={0} className='skill'>
                             <Typography variant='h6' className='skills-title'>
                                 {skill.title}
@@ -133,7 +135,7 @@ export default function Resume() {
 
                 <Grid container className='projects' spacing={3} justifyContent='space-between'>
                     {db.projects.map((project) => (
-                        <Grid item xs={12} sm={6} md={4} lg={3}>
+                        <Grid item xs={12} sm={6} lg={3}>
                             <Paper elevation={1} className='project'>
                                 <Typography variant='h6' className='project-title'>
                                     {project.title}
@@ -141,21 +143,13 @@ export default function Resume() {
                                 <Typography variant='body2' className='project-description'>
                                     {project.description}
                                 </Typography>
-                                {/* <a 
-                                    href={project.link}
-                                    className="project-link"
-                                    target="_blank"
-                                    rel="nofollow noopener noreferrer"
-                                >
-                                    Source Code
-                                </a> */}
                                 <CustomButton
                                     icon={<GitHubIcon />}
                                     text="Source Code"
                                     href={project.link}
                                     target="_blank"
                                     rel="nofollow noopener"
-                                    title="View source code"
+                                    title={`View ${project.title}'s source code`}
                                 />
                             </Paper>
                         </Grid>

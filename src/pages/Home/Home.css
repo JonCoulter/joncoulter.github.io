@@ -13,4 +13,18 @@
     font: smaller;
     line-height: 22px;
     white-space: pre-line;
+    margin-bottom: 30px !important;
+}
+
+.hobbies {
+    width: 100%;
+}
+
+.hobby {
+    padding: 20px;
+    margin-bottom: 10px;
+}
+
+.hobby-image {
+    width: 100px !important;
 }
