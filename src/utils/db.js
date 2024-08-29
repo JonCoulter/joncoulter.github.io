@@ -24,28 +24,24 @@ export default{
         }
     },
 
-    about: "Hi, I'm Jonathan Coulter!\n\nI am a third-year Computer Science student at the University of Pittsburgh, where I will be graduating in Spring 2026. Alongside my major, I am pursuing minors in Mathematics and Economics.\n\nI am passionate about finding innovative ways to leverage technology for a positive impact.",
+    about: "Hi, I'm Jonathan Coulter!\n\nI am a third-year Computer Science student at the University of Pittsburgh, where I will be graduating in Spring 2026. Alongside my major, I am pursuing minors in Mathematics and Economics.\n\nI am passionate about finding innovative ways to leverage technology for a positive impact.\n\n Let's connect!",
 
     about_experiences: [
         {
             title: "Software Engineer Intern",
             company: "Carnegie Mellon University",
-            description: "Skilled in integrating both client-side and server-side components to create responsive web applications.",
             image: "images/cmu.png"
         },
         {
             title: "UTA & Peer Tutor",
             company: "University of Pittsburgh",
-            description: "Skilled in integrating both client-side and server-side components to create responsive web applications.",
             image: "images/pitt.png"
 
         },
         {
             title: "Research Fellow",
             company: "Center for Analytical Approaches to Social Innovation",
-            description: "Skilled in integrating both client-side and server-side components to create responsive web applications.",
             image: "images/caasi.jpg"
-
         }
     ],
 
@@ -54,7 +50,7 @@ export default{
             title: "Software Engineer Intern",
             location: "Carnegie Mellon University",
             date: "May '24 - Present",
-            description: "As an intern on the R&D team at Dietrich Computing and Operations, I contributed to the development of web platforms that researchers at CMU use to conduct their studies. Primarily, I focused on the full-stack development of Sway, a chatroom web app that emphasizes depolarization through the use of AI moderated conversation."
+            description: "As an intern on the R&D team at Dietrich Computing and Operations, I contributed to the development of web platforms that researchers at CMU use to conduct their studies. Primarily, I focused on the full-stack development of Sway, a chatroom web app that facilitates depolarized conversations through the use of AI moderation."
         },
         {
             title: "Undergraduate Teaching Assistant",
@@ -66,13 +62,13 @@ export default{
             title: "SCI Peer Tutor",
             location: "University of Pittsburgh",
             date: "Jan '24 - Present",
-            description: "As a tutor, I work one-on-one with other students on a variety of computer science subjects, helping them understand tricky concepts, complete their assignments, and tackle bigger projects."
+            description: "As a tutor, I work one-on-one with students on a variety of computer science subjects, helping them understand tricky concepts, complete their assignments, and tackle bigger projects."
         },
         {
             title: "Research Fellow",
             location: "Center for Analytical Approaches to Social Innovation",
             date: "Aug '23 - Apr '24",
-            description: "I joined CAASI through a student research program in the Frederick Honors College. During the fellowship, I leveraged Python, pandas, and Excel to collect and organize data involving the citizen complaint process in Allegheny County. I collaborated with the team to integrate this data into an interactive storymap, which now empowers the community by making police accountability data more accessible and actionable."
+            description: "I joined CAASI through a student research program in the Frederick Honors College. During the fellowship, I leveraged Python, pandas, and Excel to collect and organize data involving the citizen complaint process in Allegheny County. I collaborated with the team to integrate this information into an interactive storymap, which now empowers the community by making police accountability data more accessible and actionable."
         }
     ],
 
@@ -147,17 +143,17 @@ export default{
         {
             title: "Portfolio",
             link: "https://github.com/JonCoulter/personal-website",
-            description: "The website you're currently on is one of the most fun projects I have worked on! I developed it using Node.js, React, Material UI, and Bootstrap. The website is being deployed through GitHub Pages."
+            description: "The website you're currently on is one of the most fun projects I have worked on! I developed it using Node.js, React, Material UI, and Bootstrap. The website is being deployed with GitHub Pages."
         },
         {
             title: "Echo",
             link: "https://github.com/Gwon-Stephen/MoodMusic",
-            description: "Built for TartanHacks 2024, Echo is a web app that leverages the Spotify API and OpenCV to create custom playlists based on users' moods."
+            description: "Built for TartanHacks 2024, Echo is a web app that leverages the Spotify API and OpenCV to create custom playlists based on users' mood and personal music taste."
         },
         {
             title: "Side Quest",
             link: "",
-            description: "In a world running low on of sponteniety, Side Quest is an iOS app that provides users with fun daily missions to accomplish and share with friends!"
+            description: "In a world running low on sponteniety, Side Quest is an iOS app that provides users with fun daily missions to accomplish and share with friends!"
         },
         {
             title: "Blink Buddy",
