@@ -30,14 +30,13 @@ export default function Home(){
                 </Grid>
             </Grid>
 
-
             <Grid item xs={12}>
                 <Grid container spacing={5} justifyContent='space-around'>
                     {db.about_experiences.map((experience) => (
                         <Grid item xs={12} sm={6} md={4}>
                             <div className='experience'>
                                 <img className='experience-image' src={experience.image}/>
-                                <Typography variant='body1' className='experience-title'>
+                                <Typography variant='body2' className='experience-title'>
                                     {experience.title}
                                 </Typography>
                             </div>

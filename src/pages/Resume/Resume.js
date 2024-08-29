@@ -80,7 +80,7 @@ export default function Resume() {
                 <Grid item className="section-title mb-30">
                     <span></span>
                     <h6 className='section-title-text'>
-                        My Skills
+                        Skills
                     </h6>
                 </Grid>
 
@@ -125,7 +125,7 @@ export default function Resume() {
             </Grid>
 
             {/* Projects */}
-            <Grid container className='section pb-45'>
+            <Grid container className='section'>
                 <Grid item className="section-title mb-30">
                     <span></span>
                     <h6 className='section-title-text'>
@@ -135,7 +135,7 @@ export default function Resume() {
 
                 <Grid container className='projects' spacing={3} justifyContent='space-between'>
                     {db.projects.map((project) => (
-                        <Grid item xs={12} sm={6} lg={3}>
+                        <Grid item xs={12} sm={6}>
                             <Paper elevation={1} className='project'>
                                 <Typography variant='h6' className='project-title'>
                                     {project.title}

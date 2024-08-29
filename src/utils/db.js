@@ -1,9 +1,9 @@
 import LinkedInIcon from '@mui/icons-material/LinkedIn';
 import GitHubIcon from '@mui/icons-material/GitHub';
-import InstagramIcon from '@mui/icons-material/Instagram';
 import WebOutlinedIcon from '@mui/icons-material/WebOutlined';
-import GroupsOutlinedIcon from '@mui/icons-material/GroupsOutlined';
 import AccountTreeOutlinedIcon from '@mui/icons-material/AccountTreeOutlined';
+import DatasetOutlinedIcon from '@mui/icons-material/DatasetOutlined';
+
 
 export default{
     name: "Jonathan Coulter",
@@ -24,7 +24,7 @@ export default{
         }
     },
 
-    about: "Hi, I'm Jonathan Coulter!\n\nI am a third-year Computer Science student at the University of Pittsburgh, where I will be graduating in Spring 2026. Alongside my major, I am pursuing minors in Mathematics and Economics.\n\nI am passionate about finding innovative ways to leverage technology for a positive impact.\n\n Let's connect!",
+    about: "Hi, I'm Jonathan Coulter!\n\nI am a third-year Computer Science student at the University of Pittsburgh, where I will be graduating in Spring 2026. Alongside my major, I am pursuing minors in both Mathematics and Economics.\n\nI am passionate about finding innovative ways to leverage technology for a positive impact.\n\n Let's connect!",
 
     about_experiences: [
         {
@@ -93,14 +93,14 @@ export default{
             icon: <WebOutlinedIcon />
         },
         {
-            title: "Collaboration & Leadership",
-            description: "Experienced in leading teams and promoting collaborative environments that boost productivity and foster innovation.",
-            icon: <GroupsOutlinedIcon />
+            title: "Data Structures & Algorithms",
+            description: "Strong understanding of data structures and algorithms to efficiently solve complex computational tasks.",
+            icon: <AccountTreeOutlinedIcon />
         },
         {
-            title: "Data Structures & Algorithms",
-            description: "Strong understanding of fundamental data structures and algorithms to efficiently solve complex computational tasks.",
-            icon: <AccountTreeOutlinedIcon />
+            title: "Data Science",
+            description: "Proficient in analyzing, organizing, and visualizing datasets to enhance accessibility.",
+            icon: <DatasetOutlinedIcon />
         }
     ],
 
@@ -111,7 +111,9 @@ export default{
                 "Java",
                 "Python",
                 "C/C++",
-                "Javascript"
+                "Javascript",
+                "Rust",
+                "Swift"
             ]
         },
         {
@@ -120,7 +122,9 @@ export default{
                 "React",
                 "Flask",
                 "Bootstrap",
-                "Material UI"
+                "Material UI",
+                "OpenCV",
+                "pandas"
             ]
         },
         {
@@ -131,8 +135,9 @@ export default{
             ]
         },
         {
-            title: "Source Control",
+            title: "Tools",
             description: [
+                "Docker",
                 "Git",
                 "Linux"
             ]
@@ -141,7 +146,7 @@ export default{
 
     projects: [
         {
-            title: "Portfolio",
+            title: "Portfolio Website",
             link: "https://github.com/JonCoulter/personal-website",
             description: "The website you're currently on is one of the most fun projects I have worked on! I developed it using Node.js, React, Material UI, and Bootstrap. The website is being deployed with GitHub Pages."
         },
@@ -152,7 +157,7 @@ export default{
         },
         {
             title: "Side Quest",
-            link: "",
+            link: "https://github.com/JemLuu/SheInnovates2023",
             description: "In a world running low on sponteniety, Side Quest is an iOS app that provides users with fun daily missions to accomplish and share with friends!"
         },
         {
