@@ -4,27 +4,25 @@
     font: smaller;
     line-height: 22px;
     white-space: pre-line;
+    margin-bottom: 40px !important;
 }
 
-
-/* Hobbies */
-.section-hobbies-text {
-    color: darkslategray;
-    font: smaller;
-    line-height: 22px;
-    white-space: pre-line;
-    margin-bottom: 30px !important;
+.section-title {
+    margin-bottom: 20px !important;
 }
 
-.hobbies {
-    width: 100%;
+/* Experiences */
+.experience {
+    text-align: center;
 }
 
-.hobby {
-    padding: 20px;
-    margin-bottom: 10px;
+.experience .experience-image {
+    width: 95%;
+    border-radius: 17px;
 }
 
-.hobby-image {
-    width: 100px !important;
+.experience .experience-title {
+    margin-top: 12px;
+    font-weight: 500;
+    color: rgb(82, 82, 82);
 }

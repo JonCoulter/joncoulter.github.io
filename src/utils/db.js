@@ -7,10 +7,9 @@ import AccountTreeOutlinedIcon from '@mui/icons-material/AccountTreeOutlined';
 
 export default{
     name: "Jonathan Coulter",
-    title: "CS @ Pitt | SWE @ CMU",
+    title: "CS @ Pitt | SWE Intern @ CMU",
 
     email: "jonacoulter@gmail.com",
-    location: "Pittsburgh, PA",
 
     socials: {
         LinkedIn: {
@@ -22,85 +21,58 @@ export default{
             link: "https://github.com/JonCoulter",
             text: "JonCoulter",
             icon: <GitHubIcon />
-        },
-        Instagram: {
-            link: "https://instagram.com/jon_coulter",
-            text: "jon_coulter",
-            icon: <InstagramIcon />
         }
     },
 
-    about: "Hi, I'm Jonathan Coulter!\n\nI am currently studying Computer Science at the University of Pittsburgh where I'm also minoring in Mathematics and Economics. I'm eagerly looking forward to graduating in December 2025. My college years have been a blend of learning, experimenting, and contributing to projects that leverage technology for a positive impact. From creating platforms that encourage constructive dialogue to developing apps that promote health, I'm all about using my skills to make a difference.\n\nOutside of my studies, I've enjoyed working as a Software Engineer and Developer Intern at Carnegie Mellon University, where I've been part of teams that build research tools to tackle social issues. I'm also a Teaching Assistant and Tutor at Pitt, helping other students navigate the complexities of computer science, from data structures to algorithms. My experiences have taught me a lot about teamwork, innovation, and the power of technology to solve real-world problems. I love diving into new challenges and am always ready to learn and grow in this ever-evolving field.",
+    about: "Hi, I'm Jonathan Coulter!\n\nI am a third-year Computer Science student at the University of Pittsburgh, where I will be graduating in Spring 2026. Alongside my major, I am pursuing minors in Mathematics and Economics.\n\nI am passionate about finding innovative ways to leverage technology for a positive impact.",
 
-    gettoknowme: "The majority of this website highlights my professional and academic history; however, I want to express some of my interests that I do not engage in from behind a desk. My hobbies are a major part of what makes me who I am, and I think expressing these presents a more holistic view of my personality! That being said, here are some of those things that make me who I am.",
-
-
-    hobbies: [
+    about_experiences: [
         {
-            title: "Climbing",
-            description: "I love climbing",
-            images: [
-                "climbing_1.png",
-                "climbing_2.png"
-            ]
+            title: "Software Engineer Intern",
+            company: "Carnegie Mellon University",
+            description: "Skilled in integrating both client-side and server-side components to create responsive web applications.",
+            image: "images/cmu.png"
         },
         {
-            title: "Climbing",
-            description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
-            images: [
-                "climbing_1.png",
-                "climbing_2.png"
-            ]
+            title: "UTA & Peer Tutor",
+            company: "University of Pittsburgh",
+            description: "Skilled in integrating both client-side and server-side components to create responsive web applications.",
+            image: "images/pitt.png"
+
         },
         {
-            title: "Climbing",
-            description: "I love climbing",
-            images: [
-                "climbing_1.png",
-                "climbing_2.png"
-            ]
-        },
-        {
-            title: "Climbing",
-            description: "I love climbing",
-            images: [
-                "climbing_1.png",
-                "climbing_2.png"
-            ]
+            title: "Research Fellow",
+            company: "Center for Analytical Approaches to Social Innovation",
+            description: "Skilled in integrating both client-side and server-side components to create responsive web applications.",
+            image: "images/caasi.jpg"
+
         }
     ],
 
-
     experiences: [
         {
-            title: "Software Engineer",
+            title: "Software Engineer Intern",
             location: "Carnegie Mellon University",
-            date: "Aug '24 - Present",
-            description: "I worked at cmu and it was really cool."
-        },
-        {
-            title: "Developer Intern",
-            location: "Carnegie Mellon University",
-            date: "May '24 - Aug '24",
-            description: "I was part of a dynamic intern team at Dietrich Computing where we built Sway, a platform designed to foster meaningful discussions on polarizing topics. My role involved using Flask for the website’s development, setting it up on a CMU Ubuntu server with NGINX, and getting everything running smoothly with Docker. I also helped integrate language models that could dynamically guide and moderate conversations."
+            date: "May '24 - Present",
+            description: "As an intern on the R&D team at Dietrich Computing and Operations, I contributed to the development of web platforms that researchers at CMU use to conduct their studies. Primarily, I focused on the full-stack development of Sway, a chatroom web app that emphasizes depolarization through the use of AI moderated conversation."
         },
         {
             title: "Undergraduate Teaching Assistant",
             location: "University of Pittsburgh",
             date: "Jan '24 - Present",
-            description: "I lead weekly sessions and office hours for the Data Structures & Algorithms course, supporting over 150 students. My goal is to help everyone get a better grasp of programming principles and develop their problem-solving skills, whether we’re working one-on-one or in groups."
+            description: "I teach weekly recitations and hold office hours for Data Structures & Algorithms, offering support to over 150 students. My goal is to help younger students develop a strong grasp of programming principles and bolster their problem-solving skills."
         },
         {
             title: "SCI Peer Tutor",
             location: "University of Pittsburgh",
             date: "Jan '24 - Present",
-            description: "As a tutor, I work closely with other students on a variety of computer science subjects, helping them understand tricky concepts, get through their assignments, and tackle bigger projects. It’s all about making things clearer and less daunting, whether in individual sessions or group discussions."
+            description: "As a tutor, I work one-on-one with other students on a variety of computer science subjects, helping them understand tricky concepts, complete their assignments, and tackle bigger projects."
         },
         {
             title: "Research Fellow",
             location: "Center for Analytical Approaches to Social Innovation",
             date: "Aug '23 - Apr '24",
-            description: "I used Python, pandas, and Excel to turn messy data about police-citizen interactions into clear, structured datasets. Then, I helped put this information into an interactive map, making it easier for the community to access and understand important data."
+            description: "I joined CAASI through a student research program in the Frederick Honors College. During the fellowship, I leveraged Python, pandas, and Excel to collect and organize data involving the citizen complaint process in Allegheny County. I collaborated with the team to integrate this data into an interactive storymap, which now empowers the community by making police accountability data more accessible and actionable."
         }
     ],
 
@@ -108,8 +80,8 @@ export default{
         {
             title: "University of Pittsburgh",
             location: "School of Computing and Information",
-            date: "Aug '22 - Dec '25",
-            description: "B.S. Computer Science\nMinors in Mathematics and Economics\nGPA: 4.00"
+            date: "Aug '22 - May '26",
+            description: "B.S. Computer Science\nMinors in Mathematics and Economics\nGPA: 4.00\n\nRelevant Coursework:\nAlgorithms and Data Structures I-II\nOperating Systems\nWeb Developement\nSoftware Quality Assurance\nSystems Software\nLinear Algebra"
         },
         {
             title: "Gateway High School",
@@ -118,11 +90,10 @@ export default{
         }
     ],
 
-
     services: [
         {
             title: "Full-Stack Development",
-            description: "Skilled in integrating both client-side and server-side components to create seamless, functional web applications.",
+            description: "Skilled in integrating both client-side and server-side components to create responsive web applications.",
             icon: <WebOutlinedIcon />
         },
         {
@@ -132,7 +103,7 @@ export default{
         },
         {
             title: "Data Structures & Algorithms",
-            description: "Strong understanding of fundamental data structures and algorithms to efficiently solve complex computational challenges.",
+            description: "Strong understanding of fundamental data structures and algorithms to efficiently solve complex computational tasks.",
             icon: <AccountTreeOutlinedIcon />
         }
     ],
@@ -144,7 +115,7 @@ export default{
                 "Java",
                 "Python",
                 "C/C++",
-                "Rust"
+                "Javascript"
             ]
         },
         {
@@ -176,7 +147,7 @@ export default{
         {
             title: "Portfolio",
             link: "https://github.com/JonCoulter/personal-website",
-            description: "The website you're currently on is one of the most fun projects I have worked on! I developed it using Node.js, React, Material UI, and Bootstrap. I am hosting it using GitHub Pages."
+            description: "The website you're currently on is one of the most fun projects I have worked on! I developed it using Node.js, React, Material UI, and Bootstrap. The website is being deployed through GitHub Pages."
         },
         {
             title: "Echo",
@@ -186,15 +157,14 @@ export default{
         {
             title: "Side Quest",
             link: "",
-            description: "In a world dry of sponteniety, Side Quest is an iOS app that provided users with fun daily missions to share with friends!"
+            description: "In a world running low on of sponteniety, Side Quest is an iOS app that provides users with fun daily missions to accomplish and share with friends!"
         },
         {
             title: "Blink Buddy",
             link: "https://github.com/JemLuu/Hackathon-2022",
-            description: "With the goal of promoting ocular health among individuals who spend vast amounts of time on their computer, Blink Buddy was an application that tracked users blinking habits and notified them if they were not blinking enough."
+            description: "With the goal of promoting ocular health for those who spend vast amounts of time on their computer, Blink Buddy is an application that tracks users' blinking habits and notifies them if they are not blinking enough."
         }
     ],
-
 
     teaching: {
         current:
