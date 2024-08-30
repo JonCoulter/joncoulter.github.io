@@ -31,7 +31,7 @@ export default function Home(){
             </Grid>
 
             <Grid item xs={12}>
-                <Grid container spacing={5} justifyContent='space-around'>
+                <Grid container spacing={3} justifyContent='space-around'>
                     {db.about_experiences.map((experience) => (
                         <Grid item xs={12} sm={6} md={4}>
                             <div className='experience'>

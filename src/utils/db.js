@@ -65,7 +65,7 @@ export default{
             description: "As a tutor, I work one-on-one with students on a variety of computer science subjects, helping them understand tricky concepts, complete their assignments, and tackle bigger projects."
         },
         {
-            title: "Research Fellow",
+            title: "Data Science Research Fellow",
             location: "Center for Analytical Approaches to Social Innovation",
             date: "Aug '23 - Apr '24",
             description: "I joined CAASI through a student research program in the Frederick Honors College. During the fellowship, I leveraged Python, pandas, and Excel to collect and organize data involving the citizen complaint process in Allegheny County. I collaborated with the team to integrate this information into an interactive storymap, which now empowers the community by making police accountability data more accessible and actionable."
@@ -76,7 +76,7 @@ export default{
         {
             title: "University of Pittsburgh",
             location: "School of Computing and Information",
-            date: "Aug '22 - May '26",
+            date: "Aug '22 - April '26",
             description: "B.S. Computer Science\nMinors in Mathematics and Economics\nGPA: 4.00\n\nRelevant Coursework:\nAlgorithms and Data Structures I-II\nOperating Systems\nWeb Developement\nSoftware Quality Assurance\nSystems Software\nLinear Algebra"
         },
         {

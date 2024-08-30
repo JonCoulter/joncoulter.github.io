@@ -17,12 +17,17 @@
 }
 
 .experience .experience-image {
-    width: 95%;
+    width: 90%;
     border-radius: 17px;
+    transition: width 0.3s ease-in-out;
+    margin-bottom: 12px;
+}
+
+.experience .experience-image:hover {
+    width: 100%;
 }
 
 .experience .experience-title {
-    margin-top: 12px;
     font-weight: 500;
     color: rgb(82, 82, 82);
 }

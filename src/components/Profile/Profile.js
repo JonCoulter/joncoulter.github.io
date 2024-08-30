@@ -62,7 +62,7 @@ export default function Profile() {
                 <CustomButton
                     icon={<GetAppIcon />}  // Assuming you import this icon
                     text="View Resume"
-                    href="/JonathanCoulterResume.pdf"
+                    href="/Jonathan_Coulter_Resume.pdf"
                     target="_blank"
                     rel="noopener noreferrer"
                     title="View Resume"
