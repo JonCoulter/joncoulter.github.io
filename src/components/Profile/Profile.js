@@ -2,9 +2,8 @@ import { Typography } from "@mui/material";
 import React from "react";
 import { TimelineContent, TimelineItem } from "@mui/lab";
 import CustomTimeline, { CustomTimelineSeparator } from '../CustomTimeline/CustomTimeline'
-import { PersonOutlineOutlined } from "@mui/icons-material";
+import { Article, PersonOutlineOutlined } from "@mui/icons-material";
 import CustomButton from '../CustomButton/CustomButton'
-import GetAppIcon from '@mui/icons-material/GetApp';
 
 import './Profile.css'
 
@@ -58,7 +57,7 @@ export default function Profile() {
 
                 <div className='btn-container'>
                     <CustomButton
-                        icon={<GetAppIcon />}
+                        icon={<Article />}
                         text="View Resume"
                         href="/Jonathan_Coulter_Resume.pdf"
                         target="_blank"

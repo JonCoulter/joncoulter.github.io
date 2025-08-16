@@ -28,7 +28,7 @@ const db = {
         }
     },
 
-    about: "Hi, I'm Jonathan Coulter!\n\nI'm a Computer Science student at the University of Pittsburgh, working toward my B.S. in CS with minors in Mathematics and Economics, while also pursuing Pitt's accelerated B.S.+M.S. program (graduating December 2026). Recently, I've interned at BNY and Carnegie Mellon, where I focused on full-stack development of new web platforms.\n\nWhat excites me most is building software that others get to use. I love seeing my work in action and enjoy challenges that live at the intersection of AI, data, and design, where I can turn complex ideas into tools that make life a little easier.\n\nBeyond the technical side, mentorship has become one of the most meaningful parts of my journey. From leading recitations and tutoring to coordinating Pitt CSC's mentorship program, I enjoy helping others grow their skills and discover what excites them about computer science.\n\nIf using technology to create positive impact excites you, I'd love to hear from you.\n\nLet's connect!",
+    about: "Hi, I'm Jonathan Coulter!\n\nI'm a Computer Science student at the University of Pittsburgh finishing my B.S. in CS with minors in Mathematics and Economics, while also pursuing Pitt's accelerated B.S.+M.S. program. Recently, I've interned at BNY and Carnegie Mellon, where I focused on full-stack development of new web platforms.\n\nWhat excites me most is building software that others get to use. I love seeing my work in action and enjoy challenges that live at the intersection of AI, data, and design, where I can turn complex ideas into tools that make life a little easier.\n\nBeyond the technical side, mentorship has become one of the most meaningful parts of my journey. From leading recitations and tutoring to coordinating Pitt CSC's mentorship program, I enjoy helping others grow their skills and discover what excites them about computer science.\n\nIf using technology to create positive impact excites you, I'd love to hear from you.\n\nLet's connect!",
 
     about_experiences: [
         {
@@ -141,7 +141,7 @@ const db = {
             description: "A scheduling app that actually makes finding time easy. Whenly integrates with Google Calendar, lets friends share availability in seconds, and has already helped schedule 50+ events."
         },
         {
-            title: "AdVera",
+            title: "Advera",
             github: "https://github.com/JonCoulter/advera",
             description: "A web game where you swipe through TikToks and guess if they're ads or organic. Brands get real feedback on unreleased content, and users get to test their media instincts."
         },
