@@ -51,23 +51,20 @@ export default function Profile() {
 
             <div className='profile-information'>
                 <CustomTimeline icon={<PersonOutlineOutlined />}>
-                    <CustomTimelineItem title="Email" text={db.email}/>
-
                     {Object.keys(db.socials).map(key => (
                         <CustomTimelineItem title={key} text={db.socials[key].text} link={db.socials[key].link}/>
                     ))}
                 </CustomTimeline>
 
                 <div className='btn-container'>
-                <CustomButton
-                    icon={<GetAppIcon />}  // Assuming you import this icon
-                    text="View Resume"
-                    href="/Jonathan_Coulter_Resume.pdf"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    title="View Resume"
-                />
-
+                    <CustomButton
+                        icon={<GetAppIcon />}
+                        text="View Resume"
+                        href="/Jonathan_Coulter_Resume.pdf"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        title="View Resume"
+                    />
                 </div>
             </div>
         </div>

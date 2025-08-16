@@ -1,6 +1,5 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import { Nav, Navbar } from "react-bootstrap";
-import { NavLink, useLocation } from "react-router-dom";
 import { HomeOutlined, Telegram } from "@mui/icons-material"
 import CustomButton from '../CustomButton/CustomButton'
 
@@ -11,12 +10,27 @@ import db from '../../utils/db'
 
 
 export default function Header(props) {
-    const location = useLocation().pathname
+    const { currentTab, onChangeTab } = props
+    const [isScrolled, setIsScrolled] = useState(false)
+
+    useEffect(() => {
+        const onScroll = () => {
+            setIsScrolled(window.scrollY > 0)
+        }
+        window.addEventListener('scroll', onScroll, { passive: true })
+        onScroll()
+        return () => window.removeEventListener('scroll', onScroll)
+    }, [])
+
+    const handleTabClick = (e, tab) => {
+        if (e && typeof e.preventDefault === 'function') e.preventDefault()
+        if (onChangeTab) onChangeTab(tab)
+    }
 
     return(
-        <Navbar expand='lg' sticky='top' className='header'>
+        <Navbar expand='lg' className={`header ${isScrolled ? 'header-scrolled' : ''}`}>
             {/* Home Link */}
-            <Nav.Link as={NavLink} to='/'>
+            <Nav.Link as="span" onClick={(e) => handleTabClick(e, 'home')} role='button'>
                 <Navbar.Brand className='header-home'>
                     <HomeOutlined />
                 </Navbar.Brand>
@@ -28,25 +42,25 @@ export default function Header(props) {
                 <Nav className='header-left'>
                     {/* Home Link */}
                     <Nav.Link 
-                        as={NavLink}
-                        to='/'
-                        className={location === '/' ? 'header-link-active' : 'header-link'}>
+                        as="span"
+                        onClick={(e) => handleTabClick(e, 'home')}
+                        className={currentTab === 'home' ? 'header-link header-link-active' : 'header-link'}>
                             Home
                     </Nav.Link>
 
                     {/* Resume Link */}
                     <Nav.Link 
-                        as={NavLink}
-                        to='/resume'
-                        className={location === '/resume' ? 'header-link-active' : 'header-link'}>
+                        as="span"
+                        onClick={(e) => handleTabClick(e, 'resume')}
+                        className={currentTab === 'resume' ? 'header-link header-link-active' : 'header-link'}>
                             Resume
                     </Nav.Link>
 
                     {/* Teaching Link */}
                     <Nav.Link 
-                        as={NavLink}
-                        to='/teaching'
-                        className={location === '/teaching' ? 'header-link-active' : 'header-link'}>
+                        as="span"
+                        onClick={(e) => handleTabClick(e, 'teaching')}
+                        className={currentTab === 'teaching' ? 'header-link header-link-active' : 'header-link'}>
                             Teaching
                     </Nav.Link>
                 </Nav>
@@ -60,7 +74,7 @@ export default function Header(props) {
                     <CustomButton
                         icon={<Telegram />}
                         text="Contact Me"
-                        href={`https://mail.google.com/mail/u/0/?view=cm&fs=1&tf=1&source=mailto&to=${db.email}}`}
+                        href={`https://mail.google.com/mail/u/0/?view=cm&fs=1&tf=1&source=mailto&to=${db.email}`}
                         target="_blank"
                         rel="nofollow noopener"
                         title="Send Email"

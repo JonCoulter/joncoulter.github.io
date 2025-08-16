@@ -1,5 +1,4 @@
 {
-  "homepage": "https://joncoulter.github.io/",
   "name": "personal-website",
   "version": "0.1.0",
   "private": true,
@@ -13,6 +12,9 @@
     "@testing-library/jest-dom": "^5.17.0",
     "@testing-library/react": "^13.4.0",
     "@testing-library/user-event": "^13.5.0",
+    "@tsparticles/engine": "^3.9.1",
+    "@tsparticles/react": "^3.0.0",
+    "@tsparticles/slim": "^3.9.1",
     "bootstrap": "^5.3.3",
     "json-server": "^1.0.0-beta.2",
     "material-icons": "^1.13.12",

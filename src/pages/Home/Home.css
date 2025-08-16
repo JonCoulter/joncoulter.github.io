@@ -4,7 +4,7 @@
     font: smaller;
     line-height: 22px;
     white-space: pre-line;
-    margin-bottom: 40px !important;
+    margin-bottom: 35px !important;
 }
 
 .section-title {
@@ -19,12 +19,13 @@
 .experience .experience-image {
     width: 90%;
     border-radius: 17px;
-    transition: width 0.3s ease-in-out;
+    transition: transform 0.5s cubic-bezier(0.23, 1, 0.32, 1), box-shadow 0.5s;
     margin-bottom: 12px;
 }
 
 .experience .experience-image:hover {
-    width: 100%;
+    transform: scale(1.05);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
 }
 
 .experience .experience-title {

@@ -1,3 +1,4 @@
+import EmailIcon from '@mui/icons-material/Email';
 import LinkedInIcon from '@mui/icons-material/LinkedIn';
 import GitHubIcon from '@mui/icons-material/GitHub';
 import WebOutlinedIcon from '@mui/icons-material/WebOutlined';
@@ -5,13 +6,16 @@ import AccountTreeOutlinedIcon from '@mui/icons-material/AccountTreeOutlined';
 import DatasetOutlinedIcon from '@mui/icons-material/DatasetOutlined';
 
 
-export default{
+const db = {
     name: "Jonathan Coulter",
-    title: "CS @ Pitt | SWE Intern @ CMU",
-
-    email: "jonacoulter@gmail.com",
+    title: "CS @ Pitt | Prev @ BNY, CMU",
 
     socials: {
+        Email: {
+            link: "https://mail.google.com/mail/u/0/?view=cm&fs=1&tf=1&source=mailto&to=jonacoulter@gmail.com",
+            text: "jonacoulter@gmail.com",
+            icon: <EmailIcon />
+        },
         LinkedIn: {
             link: "https://www.linkedin.com/in/jonathan-coulter-/",
             text: "jonathan-coulter-",
@@ -24,9 +28,14 @@ export default{
         }
     },
 
-    about: "Hi, I'm Jonathan Coulter!\n\nI am a third-year Computer Science student at the University of Pittsburgh, where I will be graduating in Spring 2026. Alongside my major, I am pursuing minors in both Mathematics and Economics.\n\nI am passionate about finding innovative ways to leverage technology for a positive impact.\n\n Let's connect!",
+    about: "Hi, I'm Jonathan Coulter!\n\nI'm a Computer Science student at the University of Pittsburgh, working toward my B.S. in CS with minors in Mathematics and Economics, while also pursuing Pitt's accelerated B.S.+M.S. program (graduating December 2026). Recently, I've interned at BNY and Carnegie Mellon, where I focused on full-stack development of new web platforms.\n\nWhat excites me most is building software that others get to use. I love seeing my work in action and enjoy challenges that live at the intersection of AI, data, and design, where I can turn complex ideas into tools that make life a little easier.\n\nBeyond the technical side, mentorship has become one of the most meaningful parts of my journey. From leading recitations and tutoring to coordinating Pitt CSC's mentorship program, I enjoy helping others grow their skills and discover what excites them about computer science.\n\nIf using technology to create positive impact excites you, I'd love to hear from you.\n\nLet's connect!",
 
     about_experiences: [
+        {
+            title: "Software Engineer Intern",
+            company: "Bank of New York",
+            image: "images/bny.png"
+        },
         {
             title: "Software Engineer Intern",
             company: "Carnegie Mellon University",
@@ -39,6 +48,18 @@ export default{
 
         },
         {
+            title: "CiP Section Leader",
+            company: "Stanford Code in Place",
+            image: "images/stanford.png"
+
+        },
+        {
+            title: "CSC Board Member",
+            company: "Pitt CSC",
+            image: "images/csc.png"
+
+        },
+        {
             title: "Research Fellow",
             company: "Center for Analytical Approaches to Social Innovation",
             image: "images/caasi.jpg"
@@ -48,58 +69,118 @@ export default{
     experiences: [
         {
             title: "Software Engineer Intern",
+            location: "Bank of New York",
+            date: "Jun '25 - Aug '25",
+            description: "Built a monitoring platform for millions of payment records, optimized backend APIs, and integrated a custom AI chatbot that helps non-technical staff collect insights faster."
+        },
+        {
+            title: "Board Member",
+            location: "Pitt Computer Science Club",
+            date: "Apr '25 - Present",
+            description: "Coordinate Bit/Byte, a mentorship program connecting new students with upperclassmen. It's been awesome seeing so many mentees succeed through mentorship."
+        },
+        {
+            title: "Section Leader",
+            location: "Stanford Code in Place",
+            date: "Apr '25 - May '25",
+            description: "Led a virtual section of 15 students for Stanford's intro Python course. It was lots of fun working with such an amazing group of learners from across the world."
+        },
+        {
+            title: "Software Engineer Intern",
             location: "Carnegie Mellon University",
-            date: "May '24 - Present",
-            description: "As an intern on the R&D team at Dietrich Computing and Operations, I contributed to the development of web platforms that researchers at CMU use to conduct their studies. Primarily, I focused on the full-stack development of Sway, a chatroom web app that facilitates depolarized conversations through the use of AI moderation."
+            date: "May '24 - Dec '24",
+            description: "Worked on Sway, a chatroom app that uses AI to keep conversations civil. Focused on modernizing the UI, migrating it to Firebase, and adding live dashboards."
         },
         {
             title: "Undergraduate Teaching Assistant",
             location: "University of Pittsburgh",
             date: "Jan '24 - Present",
-            description: "I teach weekly recitations and hold office hours for Data Structures & Algorithms, offering support to over 150 students. My goal is to help younger students develop a strong grasp of programming principles and bolster their problem-solving skills."
+            description: "Run weekly recitations and office hours for Data Structures & Algorithms helping 150+ students make sense topics and solve coding assignments."
         },
         {
             title: "SCI Peer Tutor",
             location: "University of Pittsburgh",
-            date: "Jan '24 - Present",
-            description: "As a tutor, I work one-on-one with students on a variety of computer science subjects, helping them understand tricky concepts, complete their assignments, and tackle bigger projects."
+            date: "Jan '24 - Dec '24",
+            description: "Led one-on-one tutoring sessionsacross a range of core CS courses, from discrete math to systems. I love when I can find the explanation that finally makes a concept click."
         },
         {
             title: "Data Science Research Fellow",
             location: "Center for Analytical Approaches to Social Innovation",
             date: "Aug '23 - Apr '24",
-            description: "I joined CAASI through a student research program in the Frederick Honors College. During the fellowship, I leveraged Python, pandas, and Excel to collect and organize data involving the citizen complaint process in Allegheny County. I collaborated with the team to integrate this information into an interactive storymap, which now empowers the community by making police accountability data more accessible and actionable."
+            description: "Pulled together fragmented police complaint data from across Allegheny County and turned it into an interactive map that the community now uses for police accountability."
         }
     ],
+    
 
     education: [
         {
             title: "University of Pittsburgh",
             location: "School of Computing and Information",
-            date: "Aug '22 - April '26",
-            description: "B.S. Computer Science\nMinors in Mathematics and Economics\nGPA: 4.00\n\nRelevant Coursework:\nAlgorithms and Data Structures I-II\nOperating Systems\nWeb Developement\nSoftware Quality Assurance\nSystems Software\nLinear Algebra"
+            date: "Jan '25 - Dec '26",
+            description: "M.S. Computer Science\nGPA: 4.00"
+        },
+        {
+            title: "University of Pittsburgh",
+            location: "School of Computing and Information",
+            date: "Aug '22 - Dec '25",
+            description: "B.S. Computer Science\nMinors in Mathematics and Economics\nGPA: 3.97"
         },
         {
             title: "Gateway High School",
             date: "Aug '18 - May '22",
-            description: "GPA: 4.00"
+            description: "GPA: 4.00 UW\n5/250"
+        }
+    ],
+
+    
+    projects: [
+        {
+            title: "Whenly",
+            link: "https://whenlymeet.com",
+            github: "https://github.com/JonCoulter/joncoulter.github.io",
+            description: "A scheduling app that actually makes finding time easy. Whenly integrates with Google Calendar, lets friends share availability in seconds, and has already helped schedule 50+ events."
+        },
+        {
+            title: "AdVera",
+            github: "https://github.com/JonCoulter/advera",
+            description: "A web game where you swipe through TikToks and guess if they're ads or organic. Brands get real feedback on unreleased content, and users get to test their media instincts."
+        },
+        {
+            title: "Echo",
+            github: "https://github.com/Gwon-Stephen/MoodMusic",
+            description: "Echo is a web app that integrates with the Spotify API and OpenCV to create custom playlists based on users' percieved mood and personal music taste."
+        },
+        {
+            title: "Portfolio",
+            github: "https://github.com/JonCoulter/personal-website",
+            description: "The website you're currently on! I developed it in React and deployed it with GitHub Pages."
+        },
+        {
+            title: "Side Quest",
+            github: "https://github.com/JemLuu/SheInnovates2023",
+            description: "An iOS app that brings back spontaneity by giving users fun daily missions to complete and share with friends."
+        },
+        {
+            title: "Blink Buddy",
+            github: "https://github.com/JemLuu/Hackathon-2022",
+            description: "An eye-health app that tracks your blinking through your webcam and notifies you when you've been staring for too long."
         }
     ],
 
     services: [
         {
-            title: "Full-Stack Development",
-            description: "Skilled in integrating both client-side and server-side components to create responsive web applications.",
+            title: "Frontend Development",
+            description: "Building responsive, user-friendly interfaces with React and modern web technologies.",
             icon: <WebOutlinedIcon />
         },
         {
-            title: "Data Structures & Algorithms",
-            description: "Strong understanding of data structures and algorithms to efficiently solve complex computational tasks.",
+            title: "Backend Development",
+            description: "Designing reliable APIs and databases that keep applications fast and scalable.",
             icon: <AccountTreeOutlinedIcon />
         },
         {
-            title: "Data Science",
-            description: "Proficient in analyzing, organizing, and visualizing datasets to enhance accessibility.",
+            title: "Software Fundamentals",
+            description: "Applying core principles to build efficient, maintainable, impactful software.",
             icon: <DatasetOutlinedIcon />
         }
     ],
@@ -108,28 +189,27 @@ export default{
         {
             title: "Languages",
             description: [
-                "Java",
                 "Python",
+                "Java",
                 "C/C++",
-                "Javascript",
-                "Rust",
-                "Swift"
+                "JS/TS",
+                "HTML/CSS",
             ]
         },
         {
-            title: "Libraries",
+            title: "Frameworks",
             description: [
                 "React",
                 "Flask",
-                "Bootstrap",
-                "Material UI",
-                "OpenCV",
-                "pandas"
+                "Angular",
+                "Spring Boot",
+                "JUnit",
             ]
         },
         {
             title: "Databases",
             description: [
+                "PostgreSQL",
                 "Firebase",
                 "SQLite"
             ]
@@ -139,31 +219,9 @@ export default{
             description: [
                 "Docker",
                 "Git",
-                "Linux"
+                "Linux",
+                "GCP"
             ]
-        }
-    ],
-
-    projects: [
-        {
-            title: "Portfolio Website",
-            link: "https://github.com/JonCoulter/personal-website",
-            description: "The website you're currently on is one of the most fun projects I have worked on! I developed it using Node.js, React, Material UI, and Bootstrap. The website is being deployed with GitHub Pages."
-        },
-        {
-            title: "Echo",
-            link: "https://github.com/Gwon-Stephen/MoodMusic",
-            description: "Built for TartanHacks 2024, Echo is a web app that leverages the Spotify API and OpenCV to create custom playlists based on users' mood and personal music taste."
-        },
-        {
-            title: "Side Quest",
-            link: "https://github.com/JemLuu/SheInnovates2023",
-            description: "In a world running low on sponteniety, Side Quest is an iOS app that provides users with fun daily missions to accomplish and share with friends!"
-        },
-        {
-            title: "Blink Buddy",
-            link: "https://github.com/JemLuu/Hackathon-2022",
-            description: "With the goal of promoting ocular health for those who spend vast amounts of time on their computer, Blink Buddy is an application that tracks users' blinking habits and notifies them if they are not blinking enough."
         }
     ],
 
@@ -171,21 +229,36 @@ export default{
         current:
         [
             {
-                semester: "Fall '24",
-                courses: "CS 0445 - Data Structures & Algorithms",
+                semester: "Fall '25",
+                courses: "CS 1501 - Data Structures & Algorithms II",
                 role: "Undergraduate Teaching Assistant"
-            },
-            {
-                semester: "Fall '24",
-                courses: "CS 0007 - Intoduction to Computer Programming\nCMPINF 0401 - Intermediate Programming\nCS 0441 - Discrete Structures for CS\nCS 0445 - Data Structures & Algorithms\nCS 0447 - Computer Organization & Assembly Language\nCS 0449 - Introduction to Systems Software",
-                role: "SCI Peer Tutor"
             }
         ],
         previous:
         [
             {
+                semester: "Summer '25",
+                courses: "Stanford CS 106A - Pragramming Methodology",
+                role: "Section Leader"
+            },
+            {
+                semester: "Spring '25",
+                courses: "CS 0445 - Data Structures & Algorithms I",
+                role: "Undergraduate Teaching Assistant"
+            },
+            {
+                semester: "Fall '24",
+                courses: "CS 0445 - Data Structures & Algorithms I",
+                role: "Undergraduate Teaching Assistant"
+            },
+            {
+                semester: "Fall '24",
+                courses: "CS 0007 - Intoduction to Computer Programming\nCMPINF 0401 - Intermediate Programming\nCS 0441 - Discrete Structures for CS\nCS 0445 - Data Structures & Algorithms I\nCS 0447 - Computer Organization & Assembly Language\nCS 0449 - Introduction to Systems Software",
+                role: "SCI Peer Tutor"
+            },
+            {
                 semester: "Spring '24",
-                courses: "CS 0445 - Data Structures & Algorithms",
+                courses: "CS 0445 - Data Structures & Algorithms I",
                 role: "Undergraduate Teaching Assistant"
             },
             {
@@ -196,3 +269,5 @@ export default{
         ]
     }
 }
+
+export default db;

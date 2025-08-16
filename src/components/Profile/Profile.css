@@ -25,8 +25,8 @@
 
 .profile-image {
     margin-top: -10px;
-    -webkit-clip-path: polygon(0 9%, 100% 0, 100% 94%, 0% 100%);
-    clip-path: polygon(0 9%, 100% 0, 100% 94%, 0% 100%)
+    -webkit-clip-path: polygon(0 5%, 100% 0, 100% 95%, 0% 100%);
+    clip-path: polygon(0 5%, 100% 0, 100% 95%, 0% 100%)
 }
 
 .profile-image img {
@@ -66,6 +66,10 @@
     color: black;
 }
 
+.profile .MuiTimelineItem-root:last-of-type .MuiTimelineConnector-root {
+    display: none;
+}
+  
 /* Button */
 .profile .btn-container {
     width: 100%;

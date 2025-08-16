@@ -1,22 +1,23 @@
 import React from "react";
-import { Grid, Icon, Paper, Typography } from "@mui/material";
+import { Box, Grid, Icon, Paper, Typography } from "@mui/material";
 import CustomTimeline, { CustomTimelineSeparator } from '../../components/CustomTimeline/CustomTimeline'
 import CodeIcon from '@mui/icons-material/Code';
 import SchoolOutlinedIcon from '@mui/icons-material/SchoolOutlined';
 import { TimelineConnector, TimelineContent, TimelineDot, TimelineItem, TimelineSeparator } from "@mui/lab";
 import CustomButton from "../../components/CustomButton/CustomButton";
 import GitHubIcon from '@mui/icons-material/GitHub';
+import OpenInNewIcon from '@mui/icons-material/OpenInNew';
 
 import './Resume.css'
 
 import db from '../../utils/db'
 
 export default function Resume() {
-    return(
+    return (
         <>
             {/* Experience & Education */}
-            <Grid container className='section pb-45'>
-                <Grid item className="section-title mb-30">
+            <Grid container className='section mb-30'>
+                <Grid item className="section-title">
                     <span></span>
                     <h6 className='section-title-text'>
                         Resume
@@ -31,7 +32,7 @@ export default function Resume() {
                                 {db.experiences.map((experience) => (
                                     <TimelineItem>
                                         <TimelineSeparator className='timeline-separator'>
-                                            <TimelineDot 
+                                            <TimelineDot
                                                 variant='outlined'
                                                 className='timeline-dot'
                                             />
@@ -54,7 +55,7 @@ export default function Resume() {
                                 {db.education.map((education) => (
                                     <TimelineItem>
                                         <TimelineSeparator className='timeline-separator'>
-                                            <TimelineDot 
+                                            <TimelineDot
                                                 variant='outlined'
                                                 className='timeline-dot'
                                             />
@@ -72,60 +73,10 @@ export default function Resume() {
                         </Grid>
                     </Grid>
                 </Grid>
-
-            </Grid>
-
-            {/* Services */}
-            <Grid container className='section pb-45'>
-                <Grid item className="section-title mb-30">
-                    <span></span>
-                    <h6 className='section-title-text'>
-                        Skills
-                    </h6>
-                </Grid>
-
-                <Grid item xs={12}>
-                    <Grid container spacing={3} justifyContent='space-around'>
-                        {db.services.map((service) => (
-                            <Grid item xs={12} sm={6} md={4}>
-                                <div className='service'>
-                                    <div className='service-icon'>
-                                        {service.icon}
-                                    </div>
-                                    <Typography variant='h6' className='service-title'>
-                                        {service.title}
-                                        </Typography>
-                                    <Typography variant='body2' className='service-description'>
-                                        {service.description}
-                                    </Typography>
-                                </div>
-                            </Grid>
-                        ))}
-                    </Grid>
-                </Grid>
-            </Grid>
-
-            {/* Skills */}
-            <Grid container className='section pb-45' spacing={3} justifyContent='space-between'>
-                {db.skills.map((skill) => (
-                    <Grid item xs={12} sm={6} lg={3}>
-                        <Paper elevation={0} className='skill'>
-                            <Typography variant='h6' className='skills-title'>
-                                {skill.title}
-                            </Typography>
-                            {skill.description.map((element) => (
-                                <Typography variant='body2' className='skill-description'>
-                                    <TimelineDot variant='outlined' className='timeline-dot' />
-                                    {element}
-                                </Typography>
-                            ))}
-                        </Paper>
-                    </Grid>
-                ))}
             </Grid>
 
             {/* Projects */}
-            <Grid container className='section'>
+            <Grid container className='section pb-45'>
                 <Grid item className="section-title mb-30">
                     <span></span>
                     <h6 className='section-title-text'>
@@ -143,20 +94,85 @@ export default function Resume() {
                                 <Typography variant='body2' className='project-description'>
                                     {project.description}
                                 </Typography>
-                                <CustomButton
-                                    icon={<GitHubIcon />}
-                                    text="Source Code"
-                                    href={project.link}
-                                    target="_blank"
-                                    rel="nofollow noopener"
-                                    title={`View ${project.title}'s source code`}
-                                />
+                                <Box display={"flex"} flexDirection={"row"}>
+                                    {project.link ? (
+                                        <Box style={{ paddingRight: "10px" }}>
+                                            <CustomButton
+                                                icon={<OpenInNewIcon />}
+                                                text="Visit"
+                                                href={project.link}
+                                                target="_blank"
+                                                rel="nofollow noopener"
+                                                title={`Visit ${project.title}`}
+                                            />
+                                        </Box>
+                                    ) : <></>}
+                                    {project.github ? (
+                                        <CustomButton
+                                            icon={<GitHubIcon />}
+                                            text="Source Code"
+                                            href={project.github}
+                                            target="_blank"
+                                            rel="nofollow noopener"
+                                            title={`View ${project.title}'s source code`}
+                                        />
+                                    ) : <></>}
+                                </Box>
                             </Paper>
                         </Grid>
                     ))}
                 </Grid>
-
             </Grid>
+
+            {/* Services */}
+            <Grid container className='section pb-45'>
+                <Grid item className="section-title">
+                    <span></span>
+                    <h6 className='section-title-text'>
+                        Skills
+                    </h6>
+                </Grid>
+
+                <Grid item xs={12}>
+                    <Grid container spacing={3} justifyContent='space-around'>
+                        {db.services.map((service) => (
+                            <Grid item xs={12} sm={6} md={4}>
+                                <div className='service'>
+                                    <div className='service-icon'>
+                                        {service.icon}
+                                    </div>
+                                    <Typography variant='h6' className='service-title'>
+                                        {service.title}
+                                    </Typography>
+                                    <Typography variant='body2' className='service-description'>
+                                        {service.description}
+                                    </Typography>
+                                </div>
+                            </Grid>
+                        ))}
+                    </Grid>
+                </Grid>
+            </Grid>
+
+            {/* Skills */}
+            <Grid container className='section' spacing={3} justifyContent='space-between'>
+                {db.skills.map((skill) => (
+                    <Grid item xs={12} sm={6} lg={3}>
+                        <Paper elevation={0} className='skill'>
+                            <Typography variant='h6' className='skills-title'>
+                                {skill.title}
+                            </Typography>
+                            {skill.description.map((element) => (
+                                <Typography variant='body2' className='skill-description'>
+                                    <TimelineDot variant='outlined' className='timeline-dot' />
+                                    {element}
+                                </Typography>
+                            ))}
+                        </Paper>
+                    </Grid>
+                ))}
+            </Grid>
+
         </>
     )
 }
