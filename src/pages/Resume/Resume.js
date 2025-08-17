@@ -110,7 +110,7 @@ export default function Resume() {
                                     {project.github ? (
                                         <CustomButton
                                             icon={<GitHubIcon />}
-                                            text="Source Code"
+                                            text="Code"
                                             href={project.github}
                                             target="_blank"
                                             rel="nofollow noopener"

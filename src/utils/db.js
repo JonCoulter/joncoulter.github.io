@@ -71,7 +71,7 @@ const db = {
             title: "Software Engineer Intern",
             location: "Bank of New York",
             date: "Jun '25 - Aug '25",
-            description: "Built a monitoring platform for millions of payment records, optimized backend APIs, and integrated a custom AI chatbot that helps non-technical staff collect insights faster."
+            description: "Built a payment monitoring platform that unified data from legacy systems, optimized backend APIs, and integrated a custom AI chatbot that helps non-technical staff collect insights faster."
         },
         {
             title: "Board Member",
@@ -89,7 +89,7 @@ const db = {
             title: "Software Engineer Intern",
             location: "Carnegie Mellon University",
             date: "May '24 - Dec '24",
-            description: "Worked on Sway, a chatroom app that uses AI to keep conversations civil. Focused on modernizing the UI, migrating it to Firebase, and adding live dashboards."
+            description: "Developed Sway, a chatroom app that leverages AI to help keep conversations civil. Modernized the UI, migrated the platform to Firebase, and built live dashboards for monitoring activity."
         },
         {
             title: "Undergraduate Teaching Assistant",
@@ -101,7 +101,7 @@ const db = {
             title: "SCI Peer Tutor",
             location: "University of Pittsburgh",
             date: "Jan '24 - Dec '24",
-            description: "Led one-on-one tutoring sessionsacross a range of core CS courses, from discrete math to systems. I love when I can find the explanation that finally makes a concept click."
+            description: "Led one-on-one tutoring sessions across a range of core CS courses, from discrete math to systems. I love when I can find the explanation that finally makes a concept click."
         },
         {
             title: "Data Science Research Fellow",
@@ -137,8 +137,8 @@ const db = {
         {
             title: "Whenly",
             link: "https://whenlymeet.com",
-            github: "https://github.com/JonCoulter/joncoulter.github.io",
-            description: "A scheduling app that actually makes finding time easy. Whenly integrates with Google Calendar, lets friends share availability in seconds, and has already helped schedule 50+ events."
+            github: "https://github.com/JonCoulter/whenly",
+            description: "A group scheduling app that makes finding time easy. Whenly integrates with your Google Calendar to let friends share their availability in seconds, and has already helped schedule 50+ events."
         },
         {
             title: "Advera",
@@ -147,13 +147,8 @@ const db = {
         },
         {
             title: "Echo",
-            github: "https://github.com/Gwon-Stephen/MoodMusic",
+            github: "https://github.com/JonCoulter/Echo",
             description: "Echo is a web app that integrates with the Spotify API and OpenCV to create custom playlists based on users' percieved mood and personal music taste."
-        },
-        {
-            title: "Portfolio",
-            github: "https://github.com/JonCoulter/personal-website",
-            description: "The website you're currently on! I developed it in React and deployed it with GitHub Pages."
         },
         {
             title: "Side Quest",
@@ -164,6 +159,11 @@ const db = {
             title: "Blink Buddy",
             github: "https://github.com/JemLuu/Hackathon-2022",
             description: "An eye-health app that tracks your blinking through your webcam and notifies you when you've been staring for too long."
+        },
+        {
+            title: "Portfolio",
+            github: "https://github.com/JonCoulter/personal-website",
+            description: "The website you're currently on! I developed it in React and deployed it with GitHub Pages."
         }
     ],
 
