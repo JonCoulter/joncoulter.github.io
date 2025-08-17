@@ -40,6 +40,12 @@
     border-bottom-left-radius: 6px;
 }
 
+@media (max-width: 900px) {
+    .header .header-home {
+        border-bottom-left-radius: 3px;
+    }
+}
+
 .header .header-home > .MuiSvgIcon-root {
     font-size: 26px;
 }
@@ -51,10 +57,17 @@
 .header .header-right {
     display: flex;
     align-items: center;
+    float: right;
 }
 
 .header .header-right > a > .MuiSvgIcon-root {
     font-size: 16px;
     margin-right: 12px;
     color: black;
+}
+
+.collapsing, .show {
+    padding-left: 16px;
+    padding-top: 8px;
+    padding-bottom: 8px;
 }

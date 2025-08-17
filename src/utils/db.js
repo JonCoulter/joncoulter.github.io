@@ -28,7 +28,7 @@ const db = {
         }
     },
 
-    about: "Hi, I'm Jonathan Coulter!\n\nI'm a Computer Science student at the University of Pittsburgh finishing my B.S. in CS with minors in Mathematics and Economics, while also pursuing Pitt's accelerated B.S.+M.S. program. Recently, I've interned at BNY and Carnegie Mellon, where I focused on full-stack development of new web platforms.\n\nWhat excites me most is building software that others get to use. I love seeing my work in action and enjoy challenges that live at the intersection of AI, data, and design, where I can turn complex ideas into tools that make life a little easier.\n\nBeyond the technical side, mentorship has become one of the most meaningful parts of my journey. From leading recitations and tutoring to coordinating Pitt CSC's mentorship program, I enjoy helping others grow their skills and discover what excites them about computer science.\n\nIf using technology to create positive impact excites you, I'd love to hear from you.\n\nLet's connect!",
+    about: "Hi, I'm Jonathan!\n\nI'm a Computer Science student at the University of Pittsburgh finishing my Bachelor's in CS with minors in Mathematics and Economics, while also beginning to pursue my Master's through Pitt's accelerated BS+MS program. I've recently interned at BNY and Carnegie Mellon, where I worked on full-stack development of new web platforms.\n\nWhat excites me most about building software is watching people get to use what I create. I love seeing my work in action and enjoy challenges that live at the intersection of data and design, where I can turn complex ideas into tools that make life a little easier.\n\nBeyond the technical side, mentorship has become one of the most meaningful parts of my journey. From leading recitations and tutoring to coordinating Pitt CSC's mentorship program, I enjoy helping others grow their skills and discover what excites them about computer science.\n\nWhen I'm not building software, you can usually find me rock climbing, lifting, or trying new coffee shops.\n\nIf using technology to create positive impact excites you, I'd love to hear from you.\n\nLet's connect!",
 
     about_experiences: [
         {
@@ -117,13 +117,13 @@ const db = {
             title: "University of Pittsburgh",
             location: "School of Computing and Information",
             date: "Jan '25 - Dec '26",
-            description: "M.S. Computer Science\nGPA: 4.00"
+            description: "MS - Computer Science\nGPA: 4.00"
         },
         {
             title: "University of Pittsburgh",
             location: "School of Computing and Information",
             date: "Aug '22 - Dec '25",
-            description: "B.S. Computer Science\nMinors in Mathematics and Economics\nGPA: 3.97"
+            description: "BS - Computer Science\nMinors in Mathematics and Economics\nGPA: 3.97"
         },
         {
             title: "Gateway High School",
@@ -238,7 +238,7 @@ const db = {
         [
             {
                 semester: "Summer '25",
-                courses: "Stanford CS 106A - Pragramming Methodology",
+                courses: "Stanford CS 106A - Programming Methodology",
                 role: "Section Leader"
             },
             {
