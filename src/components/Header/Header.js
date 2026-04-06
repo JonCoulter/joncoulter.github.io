@@ -74,7 +74,7 @@ export default function Header(props) {
                     <CustomButton
                         icon={<Telegram />}
                         text="Contact Me"
-                        href={`https://mail.google.com/mail/u/0/?view=cm&fs=1&tf=1&source=mailto&to=${db.email}`}
+                        href={`${db.socials["Email"].link}`}
                         target="_blank"
                         rel="nofollow noopener"
                         title="Send Email"
