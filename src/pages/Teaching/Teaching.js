@@ -13,7 +13,7 @@ export default function Teaching() {
         <>
             {/* Teaching */}
             <Grid container className='section pb-45'>
-                <Grid item className="section-title mb-30">
+                <Grid item className="section-title">
                     <span></span>
                     <h6 className='section-title-text'>
                         Teaching
@@ -22,7 +22,8 @@ export default function Teaching() {
 
                 <Grid item xs={12}>
                     <Grid container className='teaching-timeline'>
-                        {/* Experience */}
+                        {/* Current */}
+                        {/* 
                         <Grid item sm={6}>
                             <CustomTimeline title='Current' icon={<SchoolOutlinedIcon />}>
                                 {db.teaching.current.map((teach) => (
@@ -43,8 +44,10 @@ export default function Teaching() {
                                 ))}
                             </CustomTimeline>
                         </Grid>
-                        <Grid item sm={6}>
-                            <CustomTimeline title='Previous' icon={<SchoolOutlinedIcon />}>
+                        */}
+                        {/* Previous */}
+                        <Grid item sm={12}>
+                            <CustomTimeline title='' icon={<SchoolOutlinedIcon />}>
                                 {db.teaching.previous.map((teach) => (
                                     <TimelineItem>
                                         <TimelineSeparator className='timeline-separator'>

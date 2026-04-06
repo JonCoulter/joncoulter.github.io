@@ -1,4 +1,8 @@
 /* Timeline section */
+.teaching-timeline .teaching-content {
+    margin-bottom: 5px;
+}
+
 .teaching-timeline .teaching-content .teach-semester {
     font-size: 16px;
     font-weight: 500;

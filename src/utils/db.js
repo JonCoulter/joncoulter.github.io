@@ -8,7 +8,7 @@ import DatasetOutlinedIcon from '@mui/icons-material/DatasetOutlined';
 
 const db = {
     name: "Jonathan Coulter",
-    title: "CS @ Pitt | Prev @ BNY, CMU",
+    title: "SWE Intern @ Microsoft | CS @ Pitt",
 
     socials: {
         Email: {
@@ -28,9 +28,14 @@ const db = {
         }
     },
 
-    about: "Hi, I'm Jonathan!\n\nI'm a Computer Science student at the University of Pittsburgh finishing my Bachelor's in CS with minors in Mathematics and Economics, while also beginning to pursue my Master's through Pitt's accelerated BS+MS program. I've recently interned at BNY and Carnegie Mellon, where I worked on full-stack development of new web platforms.\n\nWhat excites me most about building software is watching people get to use what I create. I love seeing my work in action and enjoy challenges that live at the intersection of data and design, where I can turn complex ideas into tools that make life a little easier.\n\nBeyond the technical side, mentorship has become one of the most meaningful parts of my journey. From leading recitations and tutoring to coordinating Pitt CSC's mentorship program, I enjoy helping others grow their skills and discover what excites them about computer science.\n\nWhen I'm not building software, you can usually find me rock climbing, lifting, or trying new coffee shops.\n\nIf using technology to create positive impact excites you, I'd love to hear from you.\n\nLet's connect!",
+    about: "Hi, I'm Jonathan!\n\nI'm a Computer Science student at the University of Pittsburgh finishing my Master's in CS through Pitt's accelerated BS+MS program. I'm currently interning at Microsoft on the Azure Storage team. I've also recently interned at BNY and Carnegie Mellon, where I worked on full-stack development of new web platforms.\n\nWhat excites me most about building software is watching people get to use what I create. I love seeing my work in action and enjoy challenges that exist at the intersection of data and design, where I can turn complex ideas into tools that make life easier.\n\nBeyond the technical side, mentorship has become one of the most meaningful parts of my journey. From teaching recitations and tutoring to leading Pitt CSC's mock interview program, I enjoy helping others grow their skills and discover what excites them about computer science.\n\nWhen I'm not building software, you can usually find me rock climbing, lifting, or trying new coffee shops.\n\nIf using technology to create positive impact excites you, I'd love to hear from you.\n\nLet's connect!",
 
     about_experiences: [
+        {
+            title: "Software Engineer Intern",
+            company: "Microsoft",
+            image: "images/microsoft.png"
+        },
         {
             title: "Software Engineer Intern",
             company: "Bank of New York",
@@ -69,15 +74,27 @@ const db = {
     experiences: [
         {
             title: "Software Engineer Intern",
-            location: "Bank of New York",
-            date: "Jun '25 - Aug '25",
-            description: "Built a payment monitoring platform that unified data from legacy systems, optimized backend APIs, and integrated a custom AI chatbot that helps non-technical staff collect insights faster."
+            location: "Microsoft",
+            date: "May '26 - Present",
+            description: "Azure Storage."
         },
         {
             title: "Board Member",
             location: "Pitt Computer Science Club",
             date: "Apr '25 - Present",
-            description: "Coordinate Bit/Byte, a mentorship program connecting new students with upperclassmen. It's been awesome seeing so many mentees succeed through mentorship."
+            description: "Conducted 20+ mock technical and behavioral interviews for students in the club. I also helped coordinate Bit/Byte, a mentorship program connecting new students with upperclassmen. It's been awesome seeing so many mentees succeed through mentorship."
+        },
+        {
+            title: "Undergraduate Teaching Assistant",
+            location: "University of Pittsburgh",
+            date: "Jan '24 - Dec '25",
+            description: "Run weekly recitations and office hours for Data Structures & Algorithms helping 150+ students make sense topics and solve coding assignments."
+        },
+        {
+            title: "Software Engineer Intern",
+            location: "Bank of New York",
+            date: "Jun '25 - Aug '25",
+            description: "Built a payment monitoring platform that unified data from legacy systems, optimized backend APIs, and integrated a custom AI chatbot that helps non-technical staff collect insights faster."
         },
         {
             title: "Section Leader",
@@ -89,13 +106,7 @@ const db = {
             title: "Software Engineer Intern",
             location: "Carnegie Mellon University",
             date: "May '24 - Dec '24",
-            description: "Developed Sway, a chatroom app that leverages AI to help keep conversations civil. Modernized the UI, migrated the platform to Firebase, and built live dashboards for monitoring activity."
-        },
-        {
-            title: "Undergraduate Teaching Assistant",
-            location: "University of Pittsburgh",
-            date: "Jan '24 - Present",
-            description: "Run weekly recitations and office hours for Data Structures & Algorithms helping 150+ students make sense topics and solve coding assignments."
+            description: "Developed Sway, a chatroom app that leverages AI to help keep conversations civil. I modernized the UI, migrated the platform to Firebase, and built live dashboards for monitoring activity."
         },
         {
             title: "SCI Peer Tutor",
@@ -116,8 +127,8 @@ const db = {
         {
             title: "University of Pittsburgh",
             location: "School of Computing and Information",
-            date: "Jan '25 - Dec '26",
-            description: "MS - Computer Science\nGPA: 4.00"
+            date: "Jan '26 - Dec '26",
+            description: "MS - Computer Science\nGPA: 3.88"
         },
         {
             title: "University of Pittsburgh",
@@ -138,7 +149,7 @@ const db = {
             title: "Whenly",
             link: "https://whenlymeet.com",
             github: "https://github.com/JonCoulter/whenly",
-            description: "A group scheduling app that makes finding time easy. Whenly integrates with your Google Calendar to let friends share their availability in seconds, and has already helped schedule 50+ events."
+            description: "A group scheduling app that makes finding time easy. Whenly integrates with your Google Calendar to let friends share their availability in seconds, and has already helped schedule 250+ events."
         },
         {
             title: "Advera",
@@ -226,16 +237,14 @@ const db = {
     ],
 
     teaching: {
-        current:
+        current: [],
+        previous:
         [
             {
                 semester: "Fall '25",
                 courses: "CS 1501 - Data Structures & Algorithms II",
                 role: "Undergraduate Teaching Assistant"
-            }
-        ],
-        previous:
-        [
+            },
             {
                 semester: "Summer '25",
                 courses: "Stanford CS 106A - Programming Methodology",
