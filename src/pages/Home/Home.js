@@ -1,5 +1,8 @@
 import React from "react";
-import { Grid, Paper, Typography } from "@mui/material";
+import { Grid, Typography } from "@mui/material";
+import { Article } from "@mui/icons-material";
+
+import CustomButton from '../../components/CustomButton/CustomButton'
 
 import './Home.css'
 
@@ -9,6 +12,30 @@ export default function Home(){
 
     return(
         <>
+            <div className='home-mobile-profile container-shadow'>
+                <div className='home-mobile-profile-header'>
+                    <img className='home-mobile-profile-image' src={'/images/pfp.png'} alt='' />
+                    <div>
+                        <Typography className='home-mobile-profile-name'>
+                            {db.name}
+                        </Typography>
+                        <Typography className='home-mobile-profile-title'>
+                            {db.title}
+                        </Typography>
+                    </div>
+                     <div className='home-mobile-btn-container'>
+                        <CustomButton
+                            icon={<Article />}
+                            text="Resume"
+                            href="/Jonathan_Coulter_Resume.pdf"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            title="View Resume"
+                        />
+                    </div>
+                </div>
+            </div>
+
             {/* About me */}
             <Grid container className='section'>
                 <Grid item className='section-title'>

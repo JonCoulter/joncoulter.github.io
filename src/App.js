@@ -1,4 +1,4 @@
-import React, { useCallback, useMemo, useState } from 'react';
+import React, { useMemo, useState } from 'react';
 import { Container, Grid } from '@mui/material';
 import Particles, { initParticlesEngine } from "@tsparticles/react";
 import { loadSlim } from "@tsparticles/slim";
@@ -68,7 +68,7 @@ export default function App() {
     <Container className='top-50'>
       {particlesElement}
       <Grid container spacing={7}>
-        <Grid item xs={12} sm={12} md={4} lg={3}>
+        <Grid item xs={12} sm={12} md={4} lg={3} sx={{ display: { xs: 'none', md: 'block' } }}>
           <Profile />
         </Grid>
         <Grid item xs className='content-layer'>

@@ -42,3 +42,29 @@
     margin-right: 5px !important;
     margin-left: 5px !important;
 }
+
+@media (max-width: 900px) {
+    .custom-btn {
+        min-width: 0 !important;
+        padding: 0 10px !important;
+        line-height: 28px !important;
+        font-size: 12px !important;
+    }
+
+    .custom-btn .btn-icon-container {
+        height: 22px !important;
+        width: 22px !important;
+        line-height: 22px !important;
+    }
+
+    .custom-btn .btn-icon-container > .MuiSvgIcon-root {
+        font-size: 13px !important;
+    }
+
+    .custom-btn .btn-text {
+        width: auto !important;
+        margin-right: 4px !important;
+        margin-left: 4px !important;
+        font-size: 12px !important;
+    }
+}

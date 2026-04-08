@@ -53,7 +53,7 @@ const db = {
 
         },
         {
-            title: "CiP Section Leader",
+            title: "Section Leader",
             company: "Stanford Code in Place",
             image: "images/stanford.png"
 
@@ -62,7 +62,6 @@ const db = {
             title: "CSC Board Member",
             company: "Pitt CSC",
             image: "images/csc.png"
-
         },
         {
             title: "Research Fellow",
@@ -82,31 +81,31 @@ const db = {
             title: "Board Member",
             location: "Pitt Computer Science Club",
             date: "Apr '25 - Present",
-            description: "Conducted 20+ mock technical and behavioral interviews for students in the club. I also helped coordinate Bit/Byte, a mentorship program connecting new students with upperclassmen. It's been awesome seeing so many mentees succeed through mentorship."
+            description: "Conducted mock technical/behavioral interviews for students in the club. I also helped coordinate Bit/Byte, a mentorship program connecting new students with upperclassmen. It's been awesome seeing so many mentees succeed through mentorship."
         },
         {
             title: "Undergraduate Teaching Assistant",
             location: "University of Pittsburgh",
             date: "Jan '24 - Dec '25",
-            description: "Run weekly recitations and office hours for Data Structures & Algorithms helping 150+ students make sense topics and solve coding assignments."
+            description: "Ran weekly recitations and office hours for Data Structures & Algorithms, helping 150+ students make sense of concepts and solve coding assignments."
         },
         {
             title: "Software Engineer Intern",
             location: "Bank of New York",
             date: "Jun '25 - Aug '25",
-            description: "Built a payment monitoring platform that unified data from legacy systems, optimized backend APIs, and integrated a custom AI chatbot that helps non-technical staff collect insights faster."
+            description: "Built a payment monitoring platform that unified data from legacy systems, optimized backend APIs, and integrated a custom AI chatbot that helps non-technical staff gather insights faster."
         },
         {
             title: "Section Leader",
             location: "Stanford Code in Place",
             date: "Apr '25 - May '25",
-            description: "Led a virtual section of 15 students for Stanford's intro Python course. It was lots of fun working with such an amazing group of learners from across the world."
+            description: "Led a virtual section of 15 students for Stanford's intro Python course. It was a lot of fun working with such an amazing group of learners from across the world."
         },
         {
             title: "Software Engineer Intern",
             location: "Carnegie Mellon University",
             date: "May '24 - Dec '24",
-            description: "Developed Sway, a chatroom app that leverages AI to help keep conversations civil. I modernized the UI, migrated the platform to Firebase, and built live dashboards for monitoring activity."
+            description: "Developed Sway, a chatroom app that leverages AI to moderate conversations. I modernized the UI, migrated the platform to Firebase, and built live dashboards for monitoring activity."
         },
         {
             title: "SCI Peer Tutor",
@@ -118,7 +117,7 @@ const db = {
             title: "Data Science Research Fellow",
             location: "Center for Analytical Approaches to Social Innovation",
             date: "Aug '23 - Apr '24",
-            description: "Pulled together fragmented police complaint data from across Allegheny County and turned it into an interactive map that the community now uses for police accountability."
+            description: "Collected fragmented police complaint data from across Allegheny County and turned it into an interactive map that the community uses for police accountability."
         }
     ],
     

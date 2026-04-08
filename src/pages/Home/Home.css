@@ -1,3 +1,52 @@
+/* Mobile profile card */
+.home-mobile-profile {
+    display: none;
+}
+
+@media (max-width: 900px) {
+    .home-mobile-profile {
+        display: block;
+        background-color: white;
+        border-radius: 8px;
+        padding: 12px;
+        margin-bottom: 28px;
+    }
+
+    .home-mobile-profile-header {
+        display: flex;
+        align-items: center;
+        gap: 0px;
+    }
+
+    .home-mobile-profile-image {
+        width: 64px;
+        height: 64px;
+        border-radius: 20%;
+        object-fit: cover;
+        flex-shrink: 0;
+        margin-right: 4px;
+    }
+
+    .home-mobile-profile-name {
+        text-transform: uppercase;
+        font-size: 14px !important;
+        font-weight: bold !important;
+        line-height: 1.2;
+    }
+
+    .home-mobile-profile-title {
+        font-size: 10px !important;
+        color: #777777;
+        line-height: 1.25;
+    }
+
+    .home-mobile-btn-container {
+        display: flex;
+        justify-content: flex-end;
+        margin-left: auto;
+    }
+}
+
 /* About me */
 .section-about-me-text {
     color: darkslategray;
