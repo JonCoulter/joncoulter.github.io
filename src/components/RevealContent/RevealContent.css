@@ -1,0 +1,61 @@
+@property --reveal-progress-px {
+    syntax: '<length>';
+    inherits: false;
+    initial-value: 12px;
+}
+
+.reveal-content {
+    position: relative;
+}
+
+.reveal-content.is-animating {
+    --reveal-progress-px: var(--reveal-start-px);
+    animation: reveal-progress var(--reveal-duration) linear forwards;
+
+    mask-image: linear-gradient(
+        to bottom,
+        rgba(0, 0, 0, 1) 0%,
+        rgba(0, 0, 0, 1) calc(var(--reveal-progress-px) - var(--reveal-softness-px)),
+        rgba(0, 0, 0, 0.55) var(--reveal-progress-px),
+        rgba(0, 0, 0, 0) calc(var(--reveal-progress-px) + var(--reveal-softness-px)),
+        rgba(0, 0, 0, 0) 100%
+    );
+    -webkit-mask-image: linear-gradient(
+        to bottom,
+        rgba(0, 0, 0, 1) 0%,
+        rgba(0, 0, 0, 1) calc(var(--reveal-progress-px) - var(--reveal-softness-px)),
+        rgba(0, 0, 0, 0.55) var(--reveal-progress-px),
+        rgba(0, 0, 0, 0) calc(var(--reveal-progress-px) + var(--reveal-softness-px)),
+        rgba(0, 0, 0, 0) 100%
+    );
+    mask-size: 100% 100%;
+    -webkit-mask-size: 100% 100%;
+    mask-repeat: no-repeat;
+    -webkit-mask-repeat: no-repeat;
+    mask-position: 0 0;
+    -webkit-mask-position: 0 0;
+    will-change: mask-image, -webkit-mask-image;
+}
+
+.reveal-content.is-done {
+    mask-image: none;
+    -webkit-mask-image: none;
+}
+
+@keyframes reveal-progress {
+    from {
+        --reveal-progress-px: var(--reveal-start-px);
+    }
+
+    to {
+        --reveal-progress-px: var(--reveal-end-px);
+    }
+}
+
+@media (prefers-reduced-motion: reduce) {
+    .reveal-content.is-animating {
+        animation: none;
+        mask-image: none;
+        -webkit-mask-image: none;
+    }
+}

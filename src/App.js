@@ -6,6 +6,7 @@ import { loadSlim } from "@tsparticles/slim";
 import Profile from './components/Profile/Profile';
 import Header from './components/Header/Header';
 import Footer from './components/Footer/Footer';
+import RevealContent from './components/RevealContent/RevealContent';
 import Home from './pages/Home/Home';
 
 import Resume from './pages/Resume/Resume';
@@ -74,7 +75,9 @@ export default function App() {
         <Grid item xs className='content-layer'>
           <Header currentTab={currentTab} onChangeTab={setCurrentTab} />
           <div className='main-content container-shadow'>
-            {renderContent()}
+            <RevealContent key={currentTab}>
+              {renderContent()}
+            </RevealContent>
           </div>
           <Footer />
         </Grid>
