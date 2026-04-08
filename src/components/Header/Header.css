@@ -38,11 +38,17 @@
     align-items: center;
     border-top-left-radius: 6px;
     border-bottom-left-radius: 6px;
+    transition: border-bottom-left-radius 220ms ease, border-bottom-right-radius 220ms ease;
 }
 
 @media (max-width: 900px) {
     .header .header-home {
         border-bottom-left-radius: 3px;
+    }
+
+    .header .header-home.header-home-expanded {
+        border-bottom-left-radius: 0;
+        border-bottom-right-radius: 3px;
     }
 }
 
@@ -66,8 +72,19 @@
     color: black;
 }
 
-.collapsing, .show {
-    padding-left: 16px;
-    padding-top: 8px;
-    padding-bottom: 8px;
+@media (max-width: 900px) {
+    .header .navbar-collapse {
+        padding-left: 16px;
+        padding-top: 0;
+        padding-bottom: 0;
+    }
+
+    .header .navbar-collapse .header-left {
+        padding-top: 8px;
+    }
+
+    .header .navbar-collapse .header-right {
+        padding-top: 8px;
+        padding-bottom: 8px;
+    }
 }

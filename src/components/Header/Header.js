@@ -12,6 +12,7 @@ import db from '../../utils/db'
 export default function Header(props) {
     const { currentTab, onChangeTab } = props
     const [isScrolled, setIsScrolled] = useState(false)
+    const [isExpanded, setIsExpanded] = useState(false)
 
     useEffect(() => {
         const onScroll = () => {
@@ -25,20 +26,26 @@ export default function Header(props) {
     const handleTabClick = (e, tab) => {
         if (e && typeof e.preventDefault === 'function') e.preventDefault()
         if (onChangeTab) onChangeTab(tab)
+        setIsExpanded(false)
     }
 
     return(
-        <Navbar expand='lg' className={`header ${isScrolled ? 'header-scrolled' : ''}`}>
+        <Navbar
+            expand='lg'
+            expanded={isExpanded}
+            onToggle={(nextExpanded) => setIsExpanded(nextExpanded)}
+            className={`header ${isScrolled ? 'header-scrolled' : ''}`}
+        >
             {/* Home Link */}
             <Nav.Link as="span" onClick={(e) => handleTabClick(e, 'home')} role='button'>
-                <Navbar.Brand className='header-home'>
+                <Navbar.Brand className={`header-home ${isExpanded ? 'header-home-expanded' : ''}`}>
                     <HomeOutlined />
                 </Navbar.Brand>
             </Nav.Link>
 
-            <Navbar.Toggle />
+            <Navbar.Toggle aria-controls='header-navbar-nav' />
 
-            <Navbar.Collapse>
+            <Navbar.Collapse id='header-navbar-nav'>
                 <Nav className='header-left'>
                     {/* Home Link */}
                     <Nav.Link 
