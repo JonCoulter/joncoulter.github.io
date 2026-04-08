@@ -5,8 +5,8 @@ import './RevealContent.css'
 export default function RevealContent({
   children,
   speed = 900,
-  softness = 0.12,
-  startProgress = 0.04,
+  softnessPx = 92,
+  startPx = 16,
   className = '',
 }) {
   const containerRef = useRef(null)
@@ -18,35 +18,34 @@ export default function RevealContent({
   })
   const [showMask, setShowMask] = useState(true)
 
-  const safeSoftness = Math.min(Math.max(softness, 0.03), 0.45)
-  const safeStart = Math.min(Math.max(startProgress, safeSoftness), 0.8)
+  const safeSoftnessPx = Math.min(Math.max(softnessPx, 20), 220)
+  const safeStartPx = Math.max(startPx, 8)
 
   useEffect(() => {
     const node = containerRef.current
     if (!node) return
 
     const height = node.scrollHeight || node.clientHeight || 1
-    const softnessPx = Math.min(Math.max(height * safeSoftness, 20), 220)
-    const startPx = Math.max(height * safeStart, 8)
-    const endPx = height + softnessPx
-    const travelDistance = Math.max(endPx - startPx, 1)
+    const startEdgePx = Math.min(safeStartPx, Math.max(height - 1, 1))
+    const endPx = height + (safeSoftnessPx * 2)
+    const travelDistance = Math.max(endPx - startEdgePx, 1)
     const nextDuration = Math.max(travelDistance / speed, 0.35)
 
     setRevealConfig({
       duration: nextDuration,
-      softnessPx,
-      startPx,
+      softnessPx: safeSoftnessPx,
+      startPx: startEdgePx,
       endPx,
     })
 
     setShowMask(true)
+  }, [children, speed, safeSoftnessPx, safeStartPx])
 
-    const timeoutId = window.setTimeout(() => {
+  const handleAnimationEnd = (event) => {
+    if (event.animationName === 'reveal-progress') {
       setShowMask(false)
-    }, Math.ceil(nextDuration * 1000) + 40)
-
-    return () => window.clearTimeout(timeoutId)
-  }, [children, speed, safeSoftness, safeStart])
+    }
+  }
 
   return (
     <div
@@ -58,6 +57,7 @@ export default function RevealContent({
         '--reveal-start-px': `${revealConfig.startPx.toFixed(2)}px`,
         '--reveal-end-px': `${revealConfig.endPx.toFixed(2)}px`,
       }}
+      onAnimationEnd={handleAnimationEnd}
     >
       {children}
     </div>
