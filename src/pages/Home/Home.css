@@ -10,6 +10,7 @@
         border-radius: 8px;
         padding: 12px;
         margin-bottom: 28px;
+        filter: drop-shadow(0px 1px 3px rgba(0, 0, 0, 0.12));
     }
 
     .home-mobile-profile-header {

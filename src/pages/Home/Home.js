@@ -21,7 +21,7 @@ export default function Home(){
 
     return(
         <>
-            <div className='home-mobile-profile container-shadow'>
+            <div className='home-mobile-profile'>
                 <div className='home-mobile-profile-header'>
                     <div className='home-mobile-profile-image-wrapper'>
                         {!mobileImageLoaded && (
